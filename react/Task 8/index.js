@@ -15,7 +15,7 @@ const obj2 = {
         }
     ]
 };
-const obj1 = {
+const obj = {
     "list": [
         {
             "dt": 1487246400,
