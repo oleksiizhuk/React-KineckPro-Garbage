@@ -44,27 +44,47 @@ const int1 = 100;
 const int2 = 100;
 
 
-function copy(mainObj) {
-    let objCopy;
-    let key;
-    if (mainObj === undefined || mainObj === null) {
-        return false;
+function makeCopy() {
+    var objCopy;
+
+    function copy(a) {
+
+        if (typeof a !== "object") {
+            return a;
+        }
+        /*if (typeof a === 'function') {
+            return a;
+        }*/
+        if (typeof a === 'object') {
+            const res = new a.constructor();
+            for (let key in a) {
+                res[key] = copy(a[key]);
+            }
+            return res;
+        }
+        if (Array.isArray(a)) {
+            const res = new a.constructor(val.length);
+            for (let i = 0; i < a.length; i++) {
+                res[i] = copy(a[i]);
+            }
+            return res;
+        }
+        for (let key in a) {
+            objCopy[key] = copy(a[key]);
+        }
+        return objCopy;
     }
-    if (typeof mainObj === 'object') {
-        objCopy = {};
-    }
-    if (Array.isArray(mainObj)) {
-        objCopy = [];
-    }
-    for (key in mainObj) {
-        objCopy[key] = mainObj[key];
-    }
-    return objCopy;
+
+    return copy;
 }
 
-console.log(copy(arr1));
-console.log(copy(obj1));
+let test1 = {user: {user: 123}, func: function () {}, date: new Date() };
+let counter = makeCopy();
+let ress = counter(test1);
 
+console.log(test1);
+console.log(ress);
+test1.user.user = "changed text";
+console.log(ress);
+console.log(test1);
 
-console.log(obj1);
-console.log(Object.keys(obj1));
