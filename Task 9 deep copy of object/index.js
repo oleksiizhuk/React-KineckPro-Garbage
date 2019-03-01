@@ -43,18 +43,18 @@ const str2 = "Hello";
 const int1 = 100;
 const int2 = 100;
 
+let obj = {
+    user: {user: 123}, func: function () {
+    }, date: new Date()
+};
 
 function makeCopy() {
-    var objCopy;
+    let objCopy;
 
     function copy(a) {
-
         if (typeof a !== "object") {
             return a;
         }
-        /*if (typeof a === 'function') {
-            return a;
-        }*/
         if (typeof a === 'object') {
             const res = new a.constructor();
             for (let key in a) {
@@ -63,7 +63,7 @@ function makeCopy() {
             return res;
         }
         if (Array.isArray(a)) {
-            const res = new a.constructor(val.length);
+            const res = new a.constructor(a.length);
             for (let i = 0; i < a.length; i++) {
                 res[i] = copy(a[i]);
             }
@@ -78,13 +78,9 @@ function makeCopy() {
     return copy;
 }
 
-let test1 = {user: {user: 123}, func: function () {}, date: new Date() };
 let counter = makeCopy();
-let ress = counter(test1);
-
-console.log(test1);
-console.log(ress);
-test1.user.user = "changed text";
-console.log(ress);
-console.log(test1);
+let objCopy = counter(obj);
+obj.user.user = "changed text";
+console.log(objCopy);
+console.log(obj);
 
