@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO-LIST</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="image/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="image/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Todo application</h4>
+        </div>
+        <div class="card-body">
+            <p class="card-text feedBack">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <div class="input-group" id="actionPanel">
+                <div class="input-group-prepend">
+                    <span class="selectAllAction">
+                        <button class="btn btn-outline-primary" type="button" id="selectAllButton">Select all</button>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="input">
+                <div class="input-group-prepend">
+                    <span class="addItem">
+                        <button class="btn btn-outline-primary" type="button" id="addItem">Add Item</button>
+                    </span>
+                </div>
+            </div>
+            <div class="actionPanel2">
+                <div class="btn-group btn-block">
+                    <button class="btn btn-success" id="doneAction">Done</button>
+                    <button class="btn btn-info" id="restoreAction">Restore</button>
+                    <button class="btn btn-danger" id="removeAction">Remove</button>
+                </div>
+            </div>
+        </div>
+        <ul class="list-group list-group-flush" id="list">
+          <!--  <li class="list-group-item todo-item ">
+                <span class="item-name">Test</span>
+                <button class="btn btn-outline-primary float-right">Done</button>
+                <button class="btn btn-outline-danger float-right">Remove</button>
+            </li>-->
+        </ul>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
