@@ -6,6 +6,7 @@ window.onload = function () {
     const feedBack = document.querySelector('.feedBack');
     const ul = document.getElementById('list');
     const newItemTextInput = document.getElementById('input');
+    const removeAction = document.getElementById('removeAction');
 
 
     let todoList = [];
@@ -21,6 +22,7 @@ window.onload = function () {
         if (newArray.length === todoList.length) {
             return false;
         }
+        console.log(newArray);
         localStorage.setItem('todo', JSON.stringify(newArray));
         return true;
     }
@@ -29,7 +31,6 @@ window.onload = function () {
         const items = document.querySelectorAll('.todo-item');
 
         items.forEach(function (item, key) {
-            console.log(item);
             if (item.querySelector('span.item-name').textContent === textValue) {
                 item.querySelector('.done-item').addEventListener('click', function (e) {
                     e.stopPropagation();
@@ -58,11 +59,37 @@ window.onload = function () {
             }
 
         });
-
     }
 
+    removeAction.addEventListener('click', function (event) {
+        const items = document.querySelectorAll('.todo-item');
+        console.log(items);
+
+        items.forEach(function (item, key) {
+            if (item.querySelector('.item-name').classList.contains('completed') === true) {
+                console.log("deleted");
+            }
+        });
+
+    });
+
+    input.addEventListener("keyup", function (event) {
+        console.log(event.key);
+        if (event.key === "Enter") {
+            // event.preventDefault();
+            getArgumentOutInput();
+        }
+        if (event.key === "Escape") {
+            input.value = "";
+        }
+
+    });
 
     addItem.addEventListener('click', () => {
+        getArgumentOutInput();
+    });
+
+    function getArgumentOutInput() {
         const inputValue = newItemTextInput.value.trim();
         if (!inputValue && inputValue.length < 200) {
             console.error("error length from 1 to 200");
@@ -75,11 +102,8 @@ window.onload = function () {
         temp.check = false;
         todoList.push(temp);
         createTodoItem(temp);
-    });
+    }
 
-    selectAllButton.addEventListener('click', () => {
-        console.log('select all button');
-    });
 
     function createTodoItem(arg) {
         const item = document.createElement('li');
