@@ -22,9 +22,7 @@ window.onload = function () {
         if (newArray.length === todoList.length) {
             return false;
         }
-        console.log(newArray);
         localStorage.setItem('todo', JSON.stringify(newArray));
-        return true;
     }
 
     function handleItem(textValue) {
@@ -61,16 +59,26 @@ window.onload = function () {
         });
     }
 
+    function findAndRemoveItem1(item, key) {
+        let newArray = todoList.filter((obj, index) => item !== true || index !== key);
+        if (newArray.length === todoList.length) {
+            return false;
+        }
+        localStorage.setItem('todo', JSON.stringify(newArray));
+    }
+
     removeAction.addEventListener('click', function (event) {
         const items = document.querySelectorAll('.todo-item');
         console.log(items);
-
-        items.forEach(function (item, key) {
-            if (item.querySelector('.item-name').classList.contains('completed') === true) {
-                console.log("deleted");
-            }
-        });
-
+        console.log(todoList);
+        let temp = todoList.filter(x => x.check !== true);
+        todoList = temp;
+        console.log(todoList);
+        ul.innerHTML = "";
+        for (let key in todoList) {
+            createTodoItem(todoList[key]);
+        }
+        localStorage.setItem('todo', JSON.stringify(todoList));
     });
 
     input.addEventListener("keyup", function (event) {
