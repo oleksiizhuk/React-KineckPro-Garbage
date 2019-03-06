@@ -1,5 +1,4 @@
 window.onload = function () {
-
     const input = document.querySelector('#input');
     const selectAllButton = document.getElementById('selectAllButton');
     const addItem = document.getElementById('addItem');

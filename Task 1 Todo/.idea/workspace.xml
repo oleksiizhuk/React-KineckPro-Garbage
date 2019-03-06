@@ -4,6 +4,7 @@
     <list default="true" id="0e7cf8f3-c2d2-4ddb-b106-5fcba3039bc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 9 deep copy of object/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 9 deep copy of object/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -67,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="264" />
     <option name="y" value="-18" />
     <option name="width" value="1368" />
@@ -135,15 +136,15 @@
       <workItem from="1551734214901" duration="606000" />
       <workItem from="1551738864765" duration="1789000" />
       <workItem from="1551804193856" duration="4940000" />
+      <workItem from="1551893003106" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42565000" />
+    <option name="totallyTimeSpent" value="43281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.059398495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -187,11 +188,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/xampp/htdocs/site/WD_ST3_Draggable_Speech_Balloons/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4182" />
-      </provider>
-    </entry>
+    <entry file="file://D:/xampp/htdocs/site/WD_ST3_Draggable_Speech_Balloons/js/index.js" />
     <entry file="file://$USER_HOME$/Desktop/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -222,8 +219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
