@@ -14,7 +14,7 @@ window.onload = function () {
         }
     }
 
-    /*function findAndRemoveItem(item) {
+    function findAndRemoveItem(item, key) {
         console.log(key);
         let newArray = todoList.filter((obj, index) => obj.todoValue !== item || index !== key);
         console.log(newArray);
@@ -22,64 +22,43 @@ window.onload = function () {
             console.log("false");
             return false;
         }
-        //todoList = newArray;
+        todoList = newArray;
         localStorage.setItem('todo', JSON.stringify(todoList));
         return true;
-    }*/
+    }
 
-    function handleItem(item, args) {
-        item.querySelector('.done-item').addEventListener('click', (e) => {
-            e.stopPropagation();
-            item.querySelector('.item-name').classList.toggle('completed');
-            args.check = !args.check;
-            // item.querySelector('.item-name').classList.contains('completed') ? todoList[key].check = true : todoList[key].check = false;
-            localStorage.setItem('todo', JSON.stringify(todoList));
-        });
+    function handleItem(textValue) {
+        const items = document.querySelectorAll('.todo-item');
 
-        item.addEventListener('dblclick', (e) => {
-            e.stopPropagation();
-            const thisElem = e.target;
-            console.log(thisElem);
-            if (thisElem.tagName !== 'LI') {
-                return;
+        items.forEach(function (item, key) {
+            if (item.querySelector('span.item-name').textContent === textValue) {
+                item.querySelector('.done-item').addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    item.querySelector('.item-name').classList.toggle('completed');
+                    item.querySelector('.item-name').classList.contains('completed') ? todoList[key].check = true : todoList[key].check = false;
+                    localStorage.setItem('todo', JSON.stringify(todoList));
+                });
+
+                item.addEventListener('dblclick', function (e) {
+                    e.stopPropagation();
+                    const thisElem = e.target;
+                    if (thisElem.tagName !== 'LI') {
+                        return;
+                    }
+                    input.value = textValue;
+                    ul.removeChild(item);
+                });
+
+                item.querySelector('.remove-item').addEventListener('click', function (e) {
+                    //e.stopPropagation();
+                    let textContent = item.querySelector('span.item-name').textContent;
+                    if (findAndRemoveItem(textContent, key)) {
+                        ul.removeChild(item);
+                    }
+
+                });
             }
-            const tmpValueLi = thisElem.querySelector('span.item-name').textContent;
-            const textArea = document.createElement('textarea');
 
-            textArea.style.width = thisElem.clientWidth + 'px';
-            textArea.style.height = thisElem.clientHeight + 'px';
-            textArea.className = 'edit-area';
-
-            textArea.value = tmpValueLi;
-
-            textArea.addEventListener("keyup", function (event) {
-                console.log(event.key);
-                if (event.key === "Enter") {
-                    console.log('te');
-                    thisElem.querySelector('span.item-name').innerText = textArea.value.trim();
-                    thisElem.querySelector('textarea.edit-area').remove();
-                }
-                if (event.key === "Escape") {
-                    thisElem.querySelector('span.item-name').innerText = tmpValueLi;
-                    thisElem.querySelector('textarea.edit-area').remove();
-                }
-
-            });
-            thisElem.appendChild(textArea);
-            textArea.focus();
-        });
-
-        item.querySelector('.remove-item').addEventListener('click', (e) => {
-            e.preventDefault();
-            item.remove();
-            const items = document.querySelectorAll('.todo-item');
-            todoList = Array.from(items).reduce((acc, item) => {
-                let textContent = item.querySelector('span.item-name');
-                acc.push({todoValue: textContent.textContent, check: textContent.classList.contains('completed')});
-                return acc;
-            }, []);
-            console.log(todoList);
-            localStorage.setItem('todo', JSON.stringify(todoList));
         });
     }
 
@@ -130,7 +109,6 @@ window.onload = function () {
 
 
     function createTodoItem(arg) {
-        console.log(arg);
         const item = document.createElement('li');
         const buttonDone = document.createElement('button');
         const buttonRemove = document.createElement('button');
@@ -151,7 +129,7 @@ window.onload = function () {
 
         ul.appendChild(item);
 
-        handleItem(item, arg);
+        handleItem(arg.todoValue);
 
         localStorage.setItem('todo', JSON.stringify(todoList));
     }

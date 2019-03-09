@@ -14,7 +14,9 @@
   text-decoration: line-through;
   opacity: 0.5; }
 
-#list li .btn-outline-primary {
+#list .todo-item .btn-outline-primary {
   margin: 0 5px; }
+#list .item-name {
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
