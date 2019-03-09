@@ -2,6 +2,8 @@ window.onload = function () {
     const input = document.querySelector('#input');
     const addItem = document.getElementById('addItem');
     const feedBack = document.querySelector('.feedBack');
+    const sortDone = document.getElementById('doneAction');
+    const sortResolved = document.getElementById('restoreAction');
     const ul = document.getElementById('list');
     const newItemTextInput = document.getElementById('input');
     const removeAction = document.getElementById('removeAction');
@@ -13,6 +15,31 @@ window.onload = function () {
             createTodoItem(todoList[key]);
         }
     }
+
+    sortResolved.addEventListener('click', () => {
+        todoList.sort(function (a, b) {
+            return b.check - a.check
+        });
+        console.log(todoList);
+        ul.innerHTML = "";
+        localStorage.setItem('todo', JSON.stringify(todoList));
+        for (let key in todoList) {
+            createTodoItem(todoList[key]);
+        }
+    });
+
+    sortDone.addEventListener('click', () => {
+        //console.log(todoList);
+        todoList.sort(function (a, b) {
+            return a.check - b.check
+        });
+        console.log(todoList);
+        ul.innerHTML = "";
+        localStorage.setItem('todo', JSON.stringify(todoList));
+        for (let key in todoList) {
+            createTodoItem(todoList[key]);
+        }
+    });
 
     /*function findAndRemoveItem(item) {
         console.log(key);
@@ -36,35 +63,52 @@ window.onload = function () {
             localStorage.setItem('todo', JSON.stringify(todoList));
         });
 
-        item.addEventListener('dblclick', (e) => {
-            e.stopPropagation();
-            const thisElem = e.target;
-            console.log(thisElem);
+        item.addEventListener('dblclick', function (event) {
+            const thisElem = event.target;
             if (thisElem.tagName !== 'LI') {
                 return;
             }
             const tmpValueLi = thisElem.querySelector('span.item-name').textContent;
             const textArea = document.createElement('textarea');
-
             textArea.style.width = thisElem.clientWidth + 'px';
             textArea.style.height = thisElem.clientHeight + 'px';
             textArea.className = 'edit-area';
-
             textArea.value = tmpValueLi;
 
             textArea.addEventListener("keyup", function (event) {
                 console.log(event.key);
                 if (event.key === "Enter") {
-                    console.log('te');
                     thisElem.querySelector('span.item-name').innerText = textArea.value.trim();
                     thisElem.querySelector('textarea.edit-area').remove();
+
+                    const items = document.querySelectorAll("#list li .item-name");
+                    console.log(items[0]);
+                    let newArray = todoList.map((obj, index) => { // менять todoList, как-то по странному
+                        if (obj.todoValue !== items[index].textContent) {
+                            console.log(obj.todoValue);
+                            console.log(items[index].textContent);
+
+                            todoList[index].todoValue = items[index].textContent;
+                            return todoList[index];
+                        }
+                        console.log("test 2 ");
+                        return todoList[index];
+                    });
+                    localStorage.setItem('todo', JSON.stringify(todoList));
+
                 }
                 if (event.key === "Escape") {
                     thisElem.querySelector('span.item-name').innerText = tmpValueLi;
                     thisElem.querySelector('textarea.edit-area').remove();
                 }
-
             });
+
+            textArea.addEventListener("focusout", () => { //доделать
+                console.log("focusout");
+                //thisElem.querySelector('span.item-name').innerText = tmpValueLi;
+                //thisElem.querySelector('textarea.edit-area').remove();
+            });
+
             thisElem.appendChild(textArea);
             textArea.focus();
         });
