@@ -5,19 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
 
-<form action="#">
-    <input type="checkbox" id="HaveAPet" name="HaveAPet " checked>
-    <label for="HaveAPet">HaveAPet</label>
-    <input type="checkbox" id="HaveAllergies" name="HaveAllergies">
-    <label for="HaveAllergies">HaveAllergies</label>
-    <input type="range" id="cowbell" name="cowbell"
-           min="1" max="50" value="1" step="1">
-    <label for="cowbell">Cowbell</label>
-</form>
+<div class="container">
+    <form action="#" id="form" style="padding-top:50px;">
+        <div class="form-check">
+            <input type="checkbox" id="HaveAPet" name="HaveAPe" class="select form-check-input" checked>
+            <label for="HaveAPet">HaveAPet</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="HaveAllergies" name="HaveAllergies" class="select form-check-input">
+            <label for="HaveAllergies">HaveAllergies</label>
+        </div>
+        <div class="form-group">
+            <input type="range" id="cowbell" name="cowbell"
+                   min="1" max="50" value="1" step="1">
+            <label for="cowbell">Cowbell</label>
+        </div>
+        <input type="submit" class="btn btn-primary">
+    </form>
+</div>
 <script src="index.js"></script>
 </body>
 </html>

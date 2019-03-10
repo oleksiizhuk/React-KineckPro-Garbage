@@ -24,17 +24,36 @@ const object1 = [
         HaveAllergies: false,
     }];
 
+const form = document.querySelector('#form');
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const HaveAPet = document.querySelector('#HaveAPet').checked;
+    const HaveAllergies = document.querySelector('#HaveAllergies').checked;
+    const cowbell = document.querySelector('#cowbell').value;
+
+    /* console.log(HaveAPet);
+     console.log(HaveAllergies);
+     console.log(cowbell);*/
+
+    const ress = sortObjFilter(object1, HaveAPet, HaveAllergies, cowbell);
+    console.log(ress);
+
+});
+
+/*var elems = document.querySelectorAll('.select option:checked');
+var values = [].map.call(elems, function (obj) {
+    return obj.value;
+});
+console.log(values);*/
 
 const sortObjFilter = (obj, haveAPet, haveAllergies, ageProperties) => {
-    const ressult = obj.filter(x => x.age === 16);
-    return ressult;
+
+    const ressult1 = obj.filter((x) => {
+        if (x.HaveAPet === haveAPet && x.HaveAllergies === haveAllergies && x.age > ageProperties) {
+            return x;
+        }
+    });
+    return ressult1;
 };
 
-const sortObjMap = (obj, haveAPet, haveAllergies, ageProperties) => {
-    const ressult = obj.map(x => x.age === 16);
-    return ressult;
-};
-
-
-console.log(sortObjFilter(object1));
-console.log(sortObjMap(object1));
