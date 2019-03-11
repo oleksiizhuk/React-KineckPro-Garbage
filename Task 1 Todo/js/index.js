@@ -29,7 +29,6 @@ window.onload = function () {
     });
 
     sortDone.addEventListener('click', () => {
-        //console.log(todoList);
         todoList.sort(function (a, b) {
             return a.check - b.check
         });
