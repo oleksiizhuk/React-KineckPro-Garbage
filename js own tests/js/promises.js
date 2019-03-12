@@ -9,7 +9,7 @@ function applyForVisa(document) {
 }
 
 function getVise(visa) {
-    console.info('Виза полученна');
+    console.info('Виза полученнаs');
     return visa;
 }
 
@@ -47,3 +47,5 @@ applyForVisa({})
     .then(callFamily)
     .catch(error => console.error(error))
     .then(() => console.error("продолжение не выполненого - выполненного обещяния"));
+
+// https://www.youtube.com/watch?v=SjNmkeUpQAU
