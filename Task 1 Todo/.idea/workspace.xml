@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7cf8f3-c2d2-4ddb-b106-5fcba3039bc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/.sass-cache/ee3f4fb7de7ffeaa76ac15b251e8fd5352f34712/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/ee3f4fb7de7ffeaa76ac15b251e8fd5352f34712/style.sassc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js own tests/js/asynchrony.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/asynchrony.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js own tests/js/this.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/this.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1200">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="187">
+              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -127,17 +130,19 @@
       <workItem from="1552119198146" duration="7399000" />
       <workItem from="1552143710062" duration="4060000" />
       <workItem from="1552325718535" duration="813000" />
+      <workItem from="1552386693004" duration="107000" />
+      <workItem from="1552479657702" duration="1928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68542000" />
+    <option name="totallyTimeSpent" value="70577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.09062171" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1532738" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -200,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="187">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -7,5 +7,17 @@ var user = {
     lastName: "Петров"
 };
 
-// функция вызовется с this=user
-showFullName.call(user) // "Василий Петров"
+showFullName.call(user);
+
+
+const video = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(function (tag) {
+            console.log(this.title, tag);
+        }, this);
+    }
+};
+
+video.showTags();
