@@ -1,7 +1,7 @@
-function closure1() {
+function closures1() {
     const shoters = [];
-    for (var i = 0; i < 10; i++) {
-        var shoter = function me() {
+    for (let i = 0; i < 10; i++) {
+        const shoter = function me() {
             console.log(me.i);
         };
         shoter.i = i;
@@ -10,18 +10,16 @@ function closure1() {
     return shoters;
 }
 
-const army = closure1();
-
-
+const army = closures1();
 army[9]();
 army[2]();
 
-function clusures1() {
-    var army = [];
+function closures2() {
+    const army = [];
     let i = 0;
     while (i <= 10) {
         let a = i;
-        var arm = function () {
+        const arm = function () {
             console.log(a);
         };
         army.push(arm);
@@ -30,20 +28,17 @@ function clusures1() {
     return army;
 }
 
-const army1 = clusures1();
-
+const army1 = closures2();
 army1[2]();
+army1[3]();
 
-function clusures2() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++) {
-        var shooter = (function (x) {
+function closures3() {
+    const shooters = [];
+    for (let i = 0; i < 10; i++) {
+        const shooter = (function (x) {
             return function () {
                 console.log(x);
             };
-
         })(i);
 
         shooters.push(shooter);
@@ -52,30 +47,23 @@ function clusures2() {
     return shooters;
 }
 
-var army2 = clusures2();
-
+const army2 = closures3();
 army2[0](); // 0
 army2[1](); // 1
 
-
-function makeArmy() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++)(function(i) {
-
-        var shooter = function() {
-            alert( i );
-        };
-
+function closures4() {
+    const shooters = [];
+    for (let i = 0; i < 10; i++) {
+        const shooter = (function (x) {
+            return function () {
+                console.log(x);
+            };
+        })(i);
         shooters.push(shooter);
-
-    })(i);
-
+    }
     return shooters;
 }
 
-var army = makeArmy();
-
-army[0](); // 0
-army[1](); // 1
+const army3 = closures4();
+army3[6](); // 0
+army3[5](); // 1
