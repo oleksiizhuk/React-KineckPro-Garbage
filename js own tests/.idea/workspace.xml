@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364e2a1f-15ca-4777-a8e6-667cb3d00ece" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/symbol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/asynchrony.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/symbol.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +12,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/iterable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="971">
               <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/symbol.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -56,8 +58,8 @@
         <option value="$PROJECT_DIR$/js/test.js" />
         <option value="$PROJECT_DIR$/js/generator.js" />
         <option value="$PROJECT_DIR$/js/generator2.js" />
-        <option value="$PROJECT_DIR$/js/symbol.js" />
         <option value="$PROJECT_DIR$/js/iterable.js" />
+        <option value="$PROJECT_DIR$/js/symbol.js" />
       </list>
     </option>
   </component>
@@ -113,10 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.iterable.js">
-    <configuration name="asynchrony.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/asynchrony.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.symbol.js">
     <configuration name="generator2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/generator2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -126,23 +125,26 @@
     <configuration name="iterable.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/iterable.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="symbol.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/symbol.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.asynchrony.js" />
       <item itemvalue="Node.js.test.js" />
       <item itemvalue="Node.js.generator.js" />
       <item itemvalue="Node.js.generator2.js" />
       <item itemvalue="Node.js.iterable.js" />
+      <item itemvalue="Node.js.symbol.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.symbol.js" />
         <item itemvalue="Node.js.iterable.js" />
         <item itemvalue="Node.js.generator2.js" />
         <item itemvalue="Node.js.generator.js" />
         <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.asynchrony.js" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +174,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43613000" />
+    <option name="totallyTimeSpent" value="44668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -282,13 +284,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/symbol.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/iterable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="971">
           <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/symbol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
