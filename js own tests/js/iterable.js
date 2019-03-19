@@ -4,11 +4,10 @@ for (let item of arr) {
     console.log(item);
 }
 
-console.log("------------");
+console.log("------------ 1");
 let iterator = arr[Symbol.iterator]();
 
 console.log(iterator.next());
-
 
 let next = iterator.next();
 while (!next.done) {
@@ -17,7 +16,7 @@ while (!next.done) {
 }
 
 
-console.log("------------");
+console.log("------------ 2");
 //<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>
 // генератор id
 let idGenerator = {
@@ -41,7 +40,6 @@ console.log("------------");
 //<<<<<<<<<<<<<<<<<<<<<<------------>>>>>>>>>>>>>>>>>>>
 
 let randomGenerator = {
-
     [Symbol.iterator]() {
         let count = 0;
         return {
@@ -89,7 +87,6 @@ class TaskList {
                     result.done = false;
                     index += 1;
                 }
-
                 return result;
             }
         };
