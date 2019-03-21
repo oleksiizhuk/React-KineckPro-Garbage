@@ -55,15 +55,16 @@ window.onload = function () {
 
     function handleItem(item, args) {
         item.querySelector('.done-item').addEventListener('click', (e) => {
-            e.stopPropagation();
+            //e.stopPropagation();
             item.querySelector('.item-name').classList.toggle('completed');
             args.check = !args.check;
-            // item.querySelector('.item-name').classList.contains('completed') ? todoList[key].check = true : todoList[key].check = false;
             localStorage.setItem('todo', JSON.stringify(todoList));
         });
 
-        item.addEventListener('dblclick', function (event) {
+        item.addEventListener('dblclick', function db(event) {
             const thisElem = event.target;
+            //this.removeEventListener('dblclick', arguments.callee, false);
+            removeEvent('dblclick');
             if (thisElem.tagName !== 'LI') {
                 return;
             }
@@ -75,38 +76,38 @@ window.onload = function () {
             textArea.value = tmpValueLi;
 
             textArea.addEventListener("keyup", function (event) {
-                console.log(event.key);
                 if (event.key === "Enter") {
+                    removeEvent("focusout");
                     thisElem.querySelector('span.item-name').innerText = textArea.value.trim();
                     thisElem.querySelector('textarea.edit-area').remove();
-
                     const items = document.querySelectorAll("#list li .item-name");
-                    console.log(items[0]);
-                    let newArray = todoList.map((obj, index) => { // менять todoList, как-то по странному
+                    todoList.map((obj, index) => {
                         if (obj.todoValue !== items[index].textContent) {
-                            console.log(obj.todoValue);
-                            console.log(items[index].textContent);
-
                             todoList[index].todoValue = items[index].textContent;
-                            return todoList[index];
                         }
-                        console.log("test 2 ");
-                        return todoList[index];
                     });
                     localStorage.setItem('todo', JSON.stringify(todoList));
-
                 }
+
                 if (event.key === "Escape") {
                     thisElem.querySelector('span.item-name').innerText = tmpValueLi;
                     thisElem.querySelector('textarea.edit-area').remove();
                 }
             });
 
-            textArea.addEventListener("focusout", () => { //доделать
-                console.log("focusout");
-                //thisElem.querySelector('span.item-name').innerText = tmpValueLi;
-                //thisElem.querySelector('textarea.edit-area').remove();
-            });
+             textArea.addEventListener("blur", () => { //доделать
+                 console.log("focusout");
+                 /*thisElem.querySelector('span.item-name').innerText = tmpValueLi;
+                 // thisElem.querySelector('textarea.edit-area').remove();
+
+                 const items = document.querySelectorAll("#list li .item-name");
+                 todoList.map((obj, index) => {
+                     if (obj.todoValue !== items[index].textContent) {
+                         todoList[index].todoValue = items[index].textContent;
+                     }
+                 });
+                 localStorage.setItem('todo', JSON.stringify(todoList));*/
+             });
 
             thisElem.appendChild(textArea);
             textArea.focus();
@@ -124,6 +125,13 @@ window.onload = function () {
             console.log(todoList);
             localStorage.setItem('todo', JSON.stringify(todoList));
         });
+
+        function removeEvent(listenEvents) {
+            for (let i = 0; i < item.length; i++) {
+                console.log(item[i]);
+                item[i].removeEventListener(`${listenEvents}`, arguments.callee, false);
+            }
+        }
     }
 
     removeAction.addEventListener('click', function (event) {

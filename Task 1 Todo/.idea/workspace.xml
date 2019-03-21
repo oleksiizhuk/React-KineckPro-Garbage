@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7cf8f3-c2d2-4ddb-b106-5fcba3039bc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.sass-cache/ee3f4fb7de7ffeaa76ac15b251e8fd5352f34712/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/ee3f4fb7de7ffeaa76ac15b251e8fd5352f34712/style.sassc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/js/asynchrony.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/asynchrony.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/js/this.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/this.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="240">
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="17" selection-end-line="108" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -63,10 +62,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-25" />
-    <option name="width" value="1368" />
-    <option name="height" value="646" />
+    <option name="x" value="186" />
+    <option name="y" value="-16" />
+    <option name="width" value="782" />
+    <option name="height" value="402" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,7 +94,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js own tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -132,14 +131,17 @@
       <workItem from="1552325718535" duration="813000" />
       <workItem from="1552386693004" duration="107000" />
       <workItem from="1552479657702" duration="1928000" />
+      <workItem from="1553003773278" duration="595000" />
+      <workItem from="1553198539936" duration="7740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70577000" />
+    <option name="totallyTimeSpent" value="78912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1532738" />
@@ -205,8 +207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="240">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="17" selection-end-line="108" selection-end-column="74" />
         </state>
       </provider>
     </entry>
