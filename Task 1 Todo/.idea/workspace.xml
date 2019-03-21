@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7cf8f3-c2d2-4ddb-b106-5fcba3039bc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Task 6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task 6/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task 7 iterator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task 7 iterator/index3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js own tests/js/ObjectDestructuring.js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js own tests/js/arrayDestructuring.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/Task 7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/Task 7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 7/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js own tests/js/iterable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/iterable.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="99" column="19" selection-start-line="99" selection-start-column="17" selection-end-line="108" selection-end-column="74" />
+            <state relative-caret-position="320">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -61,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="186" />
     <option name="y" value="-16" />
     <option name="width" value="782" />
@@ -132,16 +144,15 @@
       <workItem from="1552386693004" duration="107000" />
       <workItem from="1552479657702" duration="1928000" />
       <workItem from="1553003773278" duration="595000" />
-      <workItem from="1553198539936" duration="7740000" />
+      <workItem from="1553198539936" duration="7985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78912000" />
+    <option name="totallyTimeSpent" value="79157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1532738" />
@@ -207,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="99" column="19" selection-start-line="99" selection-start-column="17" selection-end-line="108" selection-end-column="74" />
+        <state relative-caret-position="320">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>

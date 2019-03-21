@@ -26,7 +26,6 @@ let idGenerator = {
             next() {
                 let value = id > 5 ? undefined : id++;
                 let done = !value;
-
                 return {value, done};
             }
         };
