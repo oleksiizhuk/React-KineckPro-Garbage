@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="364e2a1f-15ca-4777-a8e6-667cb3d00ece" name="Default Changelist" comment="" />
+    <list default="true" id="364e2a1f-15ca-4777-a8e6-667cb3d00ece" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,17 +15,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/iterable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="971">
-              <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+            <state relative-caret-position="2397">
+              <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/symbol.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/symbol.js">
+        <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="178">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -58,6 +69,8 @@
         <option value="$PROJECT_DIR$/js/generator2.js" />
         <option value="$PROJECT_DIR$/js/iterable.js" />
         <option value="$PROJECT_DIR$/js/symbol.js" />
+        <option value="$PROJECT_DIR$/js/objectAndArrayDestructuring.js" />
+        <option value="$PROJECT_DIR$/js/ObjectDestructuring.js.js" />
       </list>
     </option>
   </component>
@@ -113,36 +126,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.symbol.js">
-    <configuration name="generator2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/generator2.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.ObjectDestructuring.js.js">
+    <configuration name="ObjectDestructuring.js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/ObjectDestructuring.js.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="generator.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/generator.js" working-dir="$PROJECT_DIR$">
+    <configuration name="generator2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/generator2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="iterable.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/iterable.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="objectAndArrayDestructuring.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/objectAndArrayDestructuring.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="symbol.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/symbol.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/test.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Node.js.test.js" />
-      <item itemvalue="Node.js.generator.js" />
       <item itemvalue="Node.js.generator2.js" />
       <item itemvalue="Node.js.iterable.js" />
       <item itemvalue="Node.js.symbol.js" />
+      <item itemvalue="Node.js.objectAndArrayDestructuring.js" />
+      <item itemvalue="Node.js.ObjectDestructuring.js.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.ObjectDestructuring.js.js" />
+        <item itemvalue="Node.js.objectAndArrayDestructuring.js" />
         <item itemvalue="Node.js.symbol.js" />
         <item itemvalue="Node.js.iterable.js" />
         <item itemvalue="Node.js.generator2.js" />
-        <item itemvalue="Node.js.generator.js" />
-        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -168,21 +181,24 @@
       <workItem from="1552752777231" duration="3637000" />
       <workItem from="1552826331007" duration="5252000" />
       <workItem from="1552848667984" duration="893000" />
+      <workItem from="1553178187001" duration="3644000" />
+      <workItem from="1553183129386" duration="1082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45101000" />
+    <option name="totallyTimeSpent" value="49827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23919916" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1886196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6770285" weight="0.30227518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6759747" visible="true" weight="0.30227518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -191,7 +207,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.14626218" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32297155" side_tool="true" visible="true" weight="0.30227518" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3240253" side_tool="true" visible="true" weight="0.30227518" />
+      <window_info anchor="bottom" id="Quokka" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -283,15 +300,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/iterable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        <state relative-caret-position="2397">
+          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/objectAndArrayDestructuring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/symbol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="443">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
