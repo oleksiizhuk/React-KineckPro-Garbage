@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364e2a1f-15ca-4777-a8e6-667cb3d00ece" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/js/aplly().js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/js/bindAndThis.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/js/call().js" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 1 Todo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ObjectDestructuring.js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ObjectDestructuring.js.js" afterDir="false" />
     </list>
@@ -19,8 +27,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/iterable.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="2414">
+              <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+=======
             <state relative-caret-position="2397">
               <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
             </state>
           </provider>
         </entry>
@@ -28,12 +41,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/symbol.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="527">
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="274">
+=======
+            <state relative-caret-position="443">
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
               <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,6 +88,30 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+=======
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ReduceMapFilter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/promises.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
             </state>
           </provider>
         </entry>
@@ -144,7 +190,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task 7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task 1 Todo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -160,8 +206,17 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Node.js.aplly().js">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="Node.js.promises.js">
+    <configuration name="generator2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/generator2.js" working-dir="$PROJECT_DIR$">
+=======
+  <component name="RunManager" selected="Node.js.ObjectDestructuring.js.js">
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
     <configuration name="ObjectDestructuring.js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/ObjectDestructuring.js.js" working-dir="$PROJECT_DIR$">
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
       <method v="2" />
     </configuration>
     <configuration name="aplly().js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/aplly().js" working-dir="$PROJECT_DIR$">
@@ -170,13 +225,42 @@
     <configuration name="bindAndThis.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/bindAndThis.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="call().js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/call().js" working-dir="$PROJECT_DIR$">
+=======
+<<<<<<< HEAD
+    <configuration name="promises.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/promises.js" working-dir="$PROJECT_DIR$">
+=======
+    <configuration name="objectAndArrayDestructuring.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/objectAndArrayDestructuring.js" working-dir="$PROJECT_DIR$">
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <method v="2" />
     </configuration>
     <configuration name="objectAndArrayDestructuring.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/objectAndArrayDestructuring.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <item itemvalue="Node.js.generator.js" />
+      <item itemvalue="Node.js.generator2.js" />
+      <item itemvalue="Node.js.iterable.js" />
+      <item itemvalue="Node.js.symbol.js" />
+      <item itemvalue="Node.js.promises.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.promises.js" />
+        <item itemvalue="Node.js.symbol.js" />
+        <item itemvalue="Node.js.iterable.js" />
+        <item itemvalue="Node.js.generator2.js" />
+        <item itemvalue="Node.js.generator.js" />
+=======
+      <item itemvalue="Node.js.generator2.js" />
+      <item itemvalue="Node.js.iterable.js" />
+      <item itemvalue="Node.js.symbol.js" />
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <item itemvalue="Node.js.objectAndArrayDestructuring.js" />
       <item itemvalue="Node.js.ObjectDestructuring.js.js" />
       <item itemvalue="Node.js.bindAndThis.js" />
@@ -190,6 +274,13 @@
         <item itemvalue="Node.js.bindAndThis.js" />
         <item itemvalue="Node.js.ObjectDestructuring.js.js" />
         <item itemvalue="Node.js.objectAndArrayDestructuring.js" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Node.js.symbol.js" />
+        <item itemvalue="Node.js.iterable.js" />
+        <item itemvalue="Node.js.generator2.js" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       </list>
     </recent_temporary>
   </component>
@@ -215,24 +306,57 @@
       <workItem from="1552752777231" duration="3637000" />
       <workItem from="1552826331007" duration="5252000" />
       <workItem from="1552848667984" duration="893000" />
+<<<<<<< HEAD
+      <workItem from="1553004370664" duration="727000" />
+=======
       <workItem from="1553178187001" duration="3644000" />
+<<<<<<< HEAD
       <workItem from="1553183129386" duration="4733000" />
       <workItem from="1553262835727" duration="3141000" />
+=======
+      <workItem from="1553183129386" duration="1082000" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="56619000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="45828000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23883928" />
+=======
+    <option name="totallyTimeSpent" value="49827000" />
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21917808" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1886196" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6754478" weight="0.30227518" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67633927" weight="0.30114567" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6759747" visible="true" weight="0.30227518" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -241,8 +365,16 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.14626218" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32455215" side_tool="true" visible="true" weight="0.30227518" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3236607" side_tool="true" visible="true" weight="0.30114567" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3240253" side_tool="true" visible="true" weight="0.30227518" />
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
       <window_info anchor="bottom" id="Quokka" order="12" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -304,20 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ReduceMapFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/promises.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/generator2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -335,6 +453,10 @@
     <entry file="file://$PROJECT_DIR$/js/objectAndArrayDestructuring.js" />
     <entry file="file://$PROJECT_DIR$/js/iterable.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2414">
+          <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+=======
         <state relative-caret-position="2397">
           <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
         </state>
@@ -342,13 +464,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/symbol.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="527">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
+=======
+        <state relative-caret-position="833">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="562">
           <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
         </state>
@@ -372,6 +501,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="274">
+=======
+        <state relative-caret-position="443">
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/ReduceMapFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/promises.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/js/ObjectDestructuring.js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+>>>>>>> 7748c87cb29a08e157eb428f4630d24114067b1b
+>>>>>>> 1a0c9956d81e88dbc72a94ef0a59397443a150bb
         </state>
       </provider>
     </entry>
