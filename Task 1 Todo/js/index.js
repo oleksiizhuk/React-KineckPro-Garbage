@@ -95,19 +95,18 @@ window.onload = function () {
                 }
             });
 
-             textArea.addEventListener("blur", () => { //доделать
-                 console.log("focusout");
-                 /*thisElem.querySelector('span.item-name').innerText = tmpValueLi;
-                 // thisElem.querySelector('textarea.edit-area').remove();
-
-                 const items = document.querySelectorAll("#list li .item-name");
-                 todoList.map((obj, index) => {
-                     if (obj.todoValue !== items[index].textContent) {
-                         todoList[index].todoValue = items[index].textContent;
-                     }
-                 });
-                 localStorage.setItem('todo', JSON.stringify(todoList));*/
-             });
+            textArea.addEventListener("blur", () => { //доделать
+                console.log("focusout");
+                /*thisElem.querySelector('span.item-name').innerText = tmpValueLi;
+                // thisElem.querySelector('textarea.edit-area').remove();
+                const items = document.querySelectorAll("#list li .item-name");
+                todoList.map((obj, index) => {
+                    if (obj.todoValue !== items[index].textContent) {
+                        todoList[index].todoValue = items[index].textContent;
+                    }
+                });
+                localStorage.setItem('todo', JSON.stringify(todoList));*/
+            });
 
             thisElem.appendChild(textArea);
             textArea.focus();

@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7cf8f3-c2d2-4ddb-b106-5fcba3039bc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Task 6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task 6/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task 7 iterator/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task 7 iterator/index3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../js own tests/js/ObjectDestructuring.js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../js own tests/js/arrayDestructuring.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/Task 7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/Task 7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 7 iterator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/js/iterable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js own tests/js/iterable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="272">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -73,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="186" />
     <option name="y" value="-16" />
     <option name="width" value="782" />
@@ -106,7 +92,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task 6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -145,17 +131,20 @@
       <workItem from="1552479657702" duration="1928000" />
       <workItem from="1553003773278" duration="595000" />
       <workItem from="1553198539936" duration="7985000" />
+      <workItem from="1553273526078" duration="641000" />
+      <workItem from="1553279305624" duration="11000" />
+      <workItem from="1553279340158" duration="20303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79157000" />
+    <option name="totallyTimeSpent" value="100112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1532738" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15279241" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -168,6 +157,7 @@
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Quokka" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -218,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="272">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
