@@ -1,20 +1,22 @@
-function makeArmy() {
-
-    var shooters = [];
-
-    for (let i = 0; i < 10; i++) {
-        var shooter = function() { // функция-стрелок
-            console.log(i); // выводит свой номер
-        };
-        shooters.push(shooter);
+function accum(str) {
+    const mySet = new Set();
+    let res = '';
+    Array.from(str.toLowerCase().replace(/[^a-zA-Z]/gi, "")).filter((item) => {
+        mySet.add(item);
+    });
+    console.log(mySet);
+    for (let item of mySet.values()) {
+        res += item;
     }
-
-    return shooters;
+    console.log(res);
+    return res;
 }
 
-var army = makeArmy();
-console.log(army);
+const test = "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu";
+const acum = "ZpglnRxqenU";
+let res = accum(test);
 
-for (let i = 0; i < 10; i++) {
-    army[i]();
-}
+if (res === acum) {
+    console.log(true);
+} else
+    console.log(false);
