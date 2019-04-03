@@ -1,0 +1,259 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "location": "OnFatalError",
+    "filename": "report.20190402.193731.13112.001.json",
+    "dumpEventTime": "2019-04-02T19:37:31Z",
+    "processId": 13112,
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\git React\\React\\js own tests\\js\\jstest.js"
+    ],
+    "nodejsVersion": "v11.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.10.0",
+      "v8": "7.0.276.38-node.17",
+      "uv": "1.26.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1a",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.10.0/node-v11.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.10.0/node-v11.10.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.10.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17134",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "WIN-2EPLOFACNB8"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff73dfadd6e",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9902"
+    },
+    {
+      "pc": "0x00007ff73dfacc36",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+5494"
+    },
+    {
+      "pc": "0x00007ff73dfac4a2",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+3554"
+    },
+    {
+      "pc": "0x00007ff73e0aa3ed",
+      "symbol": "uv_loop_fork+83805"
+    },
+    {
+      "pc": "0x00007ff73e4a0f1e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff73e4a0e57",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff73e550e74",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14900"
+    },
+    {
+      "pc": "0x00007ff73e546994",
+      "symbol": "v8::internal::Heap::CollectGarbage+7556"
+    },
+    {
+      "pc": "0x00007ff73e545068",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff73e54eab7",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5751"
+    },
+    {
+      "pc": "0x00007ff73e54eb36",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5878"
+    },
+    {
+      "pc": "0x00007ff73e6d78e1",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff73e790cea",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27082"
+    },
+    {
+      "pc": "0x0000000258f50461",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1501249536,
+    "totalCommittedMemory": 1501249536,
+    "usedMemory": 1469972256,
+    "availableMemory": 27171016,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 5242880,
+        "committedMemory": 5242880,
+        "capacity": 2577920,
+        "used": 1522688,
+        "available": 1055232
+      },
+      "old_space": {
+        "memorySize": 1492324352,
+        "committedMemory": 1492324352,
+        "capacity": 1467542216,
+        "used": 1467376912,
+        "available": 165304
+      },
+      "code_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 563616,
+        "used": 563616,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 536576,
+        "committedMemory": 536576,
+        "capacity": 226400,
+        "used": 226400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1572864,
+        "committedMemory": 1572864,
+        "capacity": 25717536,
+        "used": 249120,
+        "available": 25468416
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Oleks\\AppData\\Roaming",
+    "COLORTERM": "true",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "WIN-2EPLOFACNB8",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DEBUG_COLORS": "true",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_NO_ATTACH_CONSOLE": "true",
+    "FORCE_COLOR": "true",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Oleks",
+    "LOCALAPPDATA": "C:\\Users\\Oleks\\AppData\\Local",
+    "LOGONSERVER": "\\\\WIN-2EPLOFACNB8",
+    "MOCHA_COLORS": "1",
+    "npm_config_color": "always",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Oleks\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Oleks\\OneDrive",
+    "OS": "Windows_NT",
+    "Path=C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\=(prog web)": "\\tidy\\tidy.exe;;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\nodejs\\;C:\\Ruby24-x64\\bin;C:\\Users\\Oleks\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Oleks\\AppData\\Local\\atom\\bin;C:\\Users\\Oleks\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Oleks\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3c03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Oleks\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Oleks\\AppData\\Local\\Temp",
+    "USERDOMAIN": "WIN-2EPLOFACNB8",
+    "USERDOMAIN_ROAMINGPROFILE": "WIN-2EPLOFACNB8",
+    "USERNAME": "Oleks",
+    "USERPROFILE": "C:\\Users\\Oleks",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}
