@@ -4,49 +4,68 @@ import MainComponent from "./components";
 export default class Main extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       text: "",
       list: []
     };
-
-    this.getLocalStorage();
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleAddToList = this.handleAddToList.bind(this);
+    this.removeItem = this.removeItem.bind(this);
+    this.doneItem = this.doneItem.bind(this);
   }
 
-
-  getLocalStorage() {
+  componentWillMount() {
     if (localStorage.getItem('todo') !== null) {
-      this.state.list = JSON.parse(localStorage.getItem('todo'));
+      this.setState(
+        () => {
+          return {list: JSON.parse(localStorage.getItem('todo'))}
+        }
+      )
     }
-    console.log(this.state.list);
-  };
+  }
 
-  addAndChangeToLocalStorage() {
+  changeStateList(newList) {
+    this.setState(() => {
+      return {list: newList}
+    }, () => this.addOrChangeToLocalStorage());
+  }
+
+  addOrChangeToLocalStorage() {
     localStorage.setItem('todo', JSON.stringify(this.state.list));
   }
 
   generatorUniqueId() {
     return "id" + Math.random().toString(16).slice(2);
   }
-  removeItem(){
-    const id = e.target.id;
-    document.getElementById(id).remove();
-    const newItem = this.state.list.filter((item,index) => {
-        console.log(item);
-        if(item.id !== id) {
-          return item
-        }
+
+  doneItem(id) {
+    const newItems = this.state.list.reduce((acc, item) => {
+      if(item.id === id) {
+        item.flag = !item.flag;
+      }
+      acc = item;
+      return acc;
+    },[]);
+    console.log(newItems)
+    // this.changeStateList(newItems);
+  }
+
+  removeItem(id) {
+    const newItem = this.state.list.filter(item => {
+      if (item.id !== id) {
+        return item
+      }
     });
-    console.log(newItem);
+    this.changeStateList(newItem);
   }
 
   handleKeyPress(text) {
     console.log("currentState", this.state.text);
     this.setState(() => {
       return {text: text}
-    }, () => console.log("updatetState", this.state.text));
-  };
+    }, () => console.log("updateState", this.state.text));
+  }
 
   handleAddToList() {
     console.log("current State add to list", this.state.list);
@@ -60,8 +79,8 @@ export default class Main extends Component {
     document.getElementById("input").value = "";
     this.setState(() => {
       return {list: newList}
-    }, () => this.addAndChangeToLocalStorage());
-  };
+    }, () => this.addOrChangeToLocalStorage());
+  }
 
   render() {
     return (
@@ -70,8 +89,9 @@ export default class Main extends Component {
         onAddItem={this.handleAddToList}
         text={this.state.text}
         list={this.state.list}
-        generatorUniqueId={this.generatorUniqueId}
-        removeItem={this.removeItem()}
+        onGeneratorUniqueId={this.generatorUniqueId}
+        onRemoveItem={this.removeItem}
+        onDoneItem={this.doneItem}
       />
     )
   }

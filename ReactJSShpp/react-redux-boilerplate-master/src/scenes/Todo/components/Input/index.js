@@ -15,7 +15,7 @@ export default class Input extends Component {
 
   handleKeyPress(e) {
       this.props.onKeyPress(e.target.value)
-  };
+  }
 
   render() {
     return (

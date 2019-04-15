@@ -13,20 +13,26 @@ export default class Main extends Component {
     onKeyPress: PropTypes.func,
     onAddItem: PropTypes.func,
     onGeneratorUniqueId: PropTypes.func,
-    onRemoveItem: PropTypes.func
+    onRemoveItem: PropTypes.func,
+    onDoneItem: PropTypes.func
   };
 
   constructor(props) {
     super(props);
-    console.log(props);
+    //console.log(props);
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleAddToList = this.handleAddToList.bind(this);
     this.generatorUniqueId = this.generatorUniqueId.bind(this);
     this.removeItem = this.removeItem.bind(this);
+    this.doneItem = this.doneItem.bind(this);
   }
 
-  removeItem() {
-    this.props.onRemoveItem();
+  doneItem(id) {
+    this.props.onDoneItem(id);
+  }
+
+  removeItem(id) {
+    this.props.onRemoveItem(id);
   }
 
   generatorUniqueId() {
@@ -35,11 +41,11 @@ export default class Main extends Component {
 
   handleKeyPress(text) {
     this.props.onKeyPress(text);
-  };
+  }
 
   handleAddToList() {
     this.props.onAddItem();
-  };
+  }
 
   render() {
     return (
@@ -78,7 +84,12 @@ export default class Main extends Component {
           <ul className="list-group list-group-flush" id="list">
             {this.props.list.map((item, index) => {
               return (
-                <ItemLi item={item} key={item + index}/>
+                <ItemLi
+                  item={item}
+                  key={item + index}
+                  onRemove={this.removeItem}
+                  onDoneItem={this.doneItem}
+                />
               )
             })}
 
