@@ -13,6 +13,11 @@ export default class Main extends Component {
     this.handleAddToList = this.handleAddToList.bind(this);
     this.removeItem = this.removeItem.bind(this);
     this.doneItem = this.doneItem.bind(this);
+    this.sortDone = this.sortDone.bind(this);
+    this.sortResolved = this.sortResolved.bind(this);
+    this.deleteResolved = this.deleteResolved.bind(this);
+    this.selectAllItem = this.selectAllItem.bind(this);
+    this.dbClickItem = this.dbClickItem.bind(this);
   }
 
   componentWillMount() {
@@ -39,16 +44,50 @@ export default class Main extends Component {
     return "id" + Math.random().toString(16).slice(2);
   }
 
+  dbClickItem() {
+    console.log("click dbClick")
+  }
+
+  selectAllItem() {
+    const tempList = [...this.state.list];
+    const newItems = tempList.map(item => {
+      item.flag = true;
+      return item;
+    });
+    this.changeStateList(newItems);
+  }
+
+  deleteResolved() {
+    const tempList = [...this.state.list];
+    const newItems = tempList.filter(item => item.flag !== true);
+    this.changeStateList(newItems);
+  }
+
+  sortResolved() {
+    const newItems = [...this.state.list];
+    newItems.sort(function (a, b) {
+      return a.flag - b.flag;
+    });
+    this.changeStateList(newItems);
+  }
+
+  sortDone() {
+    const newItems = [...this.state.list];
+    newItems.sort(function (a, b) {
+      return b.flag - a.flag
+    });
+    this.changeStateList(newItems);
+  }
+
   doneItem(id) {
     const newItems = this.state.list.reduce((acc, item) => {
-      if(item.id === id) {
+      if (item.id === id) {
         item.flag = !item.flag;
       }
-      acc = item;
+      acc.push(item);
       return acc;
-    },[]);
-    console.log(newItems)
-    // this.changeStateList(newItems);
+    }, []);
+    this.changeStateList(newItems);
   }
 
   removeItem(id) {
@@ -61,21 +100,17 @@ export default class Main extends Component {
   }
 
   handleKeyPress(text) {
-    console.log("currentState", this.state.text);
     this.setState(() => {
       return {text: text}
-    }, () => console.log("updateState", this.state.text));
+    });
   }
 
   handleAddToList() {
-    console.log("current State add to list", this.state.list);
     if (this.state.text.trim().length === 0) {
-      console.log("error, write the text.");
       return;
     }
     const newList = [...this.state.list];
     newList.push({text: this.state.text, flag: false, id: this.generatorUniqueId()});
-    console.log(newList);
     document.getElementById("input").value = "";
     this.setState(() => {
       return {list: newList}
@@ -92,6 +127,11 @@ export default class Main extends Component {
         onGeneratorUniqueId={this.generatorUniqueId}
         onRemoveItem={this.removeItem}
         onDoneItem={this.doneItem}
+        onSortDone={this.sortDone}
+        onSortResolved={this.sortResolved}
+        onDeleteResolved={this.deleteResolved}
+        onSelectAllItem={this.selectAllItem}
+        onDbClickItem={this.dbClickItem}
       />
     )
   }
