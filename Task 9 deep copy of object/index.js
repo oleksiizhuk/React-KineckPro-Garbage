@@ -58,10 +58,38 @@ function makeCopy() {
     return copy;
 }
 
+
+function copys(a) {
+
+    if (typeof a !== "object") {
+        return a;
+    }
+    if (typeof a === 'object') {
+        const res = new a.constructor();
+        for (let key in a) {
+            res[key] = copys(a[key]);
+        }
+        return res;
+    }
+    if (Array.isArray(a)) {
+        const res = new a.constructor(val.length);
+        for (let i = 0; i < a.length; i++) {
+            res[i] = copys(a[i]);
+        }
+        return res;
+    }
+    for (let key in a) {
+        objCopy[key] = copys(a[key]);
+    }
+    return objCopy;
+}
+
+
 let counter = makeCopy();
 let ress = counter(obj7);
-
 console.log(obj7);
 console.log(ress);
 
+let test = copys(obj7);
+console.log(test)
 

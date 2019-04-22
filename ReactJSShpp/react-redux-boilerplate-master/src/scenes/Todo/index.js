@@ -16,8 +16,7 @@ export default class Main extends Component {
     this.sortDone = this.sortDone.bind(this);
     this.sortResolved = this.sortResolved.bind(this);
     this.deleteResolved = this.deleteResolved.bind(this);
-    this.selectAllItem = this.selectAllItem.bind(this);
-    this.dbClickItem = this.dbClickItem.bind(this);
+    this.editItem = this.editItem.bind(this);
   }
 
   componentWillMount() {
@@ -31,30 +30,18 @@ export default class Main extends Component {
   }
 
   changeStateList(newList) {
+    this.addOrChangeToLocalStorage(newList);
     this.setState(() => {
       return {list: newList}
-    }, () => this.addOrChangeToLocalStorage());
+    }, () => console.log('test'));
   }
 
-  addOrChangeToLocalStorage() {
-    localStorage.setItem('todo', JSON.stringify(this.state.list));
+  addOrChangeToLocalStorage(newList) {
+    localStorage.setItem('todo', JSON.stringify(newList));
   }
 
   generatorUniqueId() {
     return "id" + Math.random().toString(16).slice(2);
-  }
-
-  dbClickItem() {
-    console.log("click dbClick")
-  }
-
-  selectAllItem() {
-    const tempList = [...this.state.list];
-    const newItems = tempList.map(item => {
-      item.flag = true;
-      return item;
-    });
-    this.changeStateList(newItems);
   }
 
   deleteResolved() {
@@ -64,7 +51,7 @@ export default class Main extends Component {
   }
 
   sortResolved() {
-    const newItems = [...this.state.list];
+    const newItems = this.deepCopy(this.state.list);
     newItems.sort(function (a, b) {
       return a.flag - b.flag;
     });
@@ -72,9 +59,9 @@ export default class Main extends Component {
   }
 
   sortDone() {
-    const newItems = [...this.state.list];
+    const newItems = this.deepCopy(this.state.list);
     newItems.sort(function (a, b) {
-      return b.flag - a.flag
+      return b.flag - a.flag;
     });
     this.changeStateList(newItems);
   }
@@ -99,6 +86,17 @@ export default class Main extends Component {
     this.changeStateList(newItem);
   }
 
+  editItem(id) {
+    const tmpItems = [...this.state.list];
+    const isEditItem = tmpItems.map((item) => {
+      if (item.id === id) {
+        item.text = this.state.text;
+      }
+      return item;
+    });
+    this.changeStateList(isEditItem);
+  }
+
   handleKeyPress(text) {
     this.setState(() => {
       return {text: text}
@@ -118,6 +116,7 @@ export default class Main extends Component {
   }
 
   render() {
+    console.log("render");
     return (
       <MainComponent
         onKeyPress={this.handleKeyPress}
@@ -130,9 +129,27 @@ export default class Main extends Component {
         onSortDone={this.sortDone}
         onSortResolved={this.sortResolved}
         onDeleteResolved={this.deleteResolved}
-        onSelectAllItem={this.selectAllItem}
-        onDbClickItem={this.dbClickItem}
+        onEditItem={this.editItem}
       />
     )
   }
+
+  deepCopy(cloneableData) {
+    let clonedData;
+    if (cloneableData instanceof Object) {
+      if (Array.isArray(cloneableData)) {
+        clonedData = [];
+      } else {
+        clonedData = {};
+      }
+      for (let key in cloneableData) {
+        clonedData[key] = this.deepCopy(cloneableData[key]);
+      }
+    } else {
+      clonedData = cloneableData;
+    }
+    return clonedData;
+  }
 }
+
+

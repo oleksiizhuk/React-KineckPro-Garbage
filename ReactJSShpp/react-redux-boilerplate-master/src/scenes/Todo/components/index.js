@@ -19,8 +19,7 @@ export default class Main extends Component {
     onSortDone: PropTypes.func,
     onSortResolved: PropTypes.func,
     onDeleteResolved: PropTypes.func,
-    onSelectAllItem: PropTypes.func,
-    onDbClickItem: PropTypes.func
+    onEditItem: PropTypes.func
   };
 
   constructor(props) {
@@ -33,16 +32,11 @@ export default class Main extends Component {
     this.sortDone = this.sortDone.bind(this);
     this.sortResolved = this.sortResolved.bind(this);
     this.deleteResolved = this.deleteResolved.bind(this);
-    this.selectAllItem = this.selectAllItem.bind(this);
-    this.dbClickItem = this.dbClickItem.bind(this);
+    this.editItem = this.editItem.bind(this);
   }
 
-  dbClickItem() {
-    this.props.onDbClickItem();
-  }
-
-  selectAllItem() {
-    this.props.onSelectAllItem();
+  editItem(id) {
+    this.props.onEditItem(id);
   }
 
   deleteResolved() {
@@ -89,15 +83,10 @@ export default class Main extends Component {
             <FeedBack/>
             <div className="input-group" id="actionPanel">
               <div className="input-group-prepend">
-                    <span className="selectAllAction">
-                        <SortButton id={'selectAll'} classN={'btn btn-outline-primary'} html={'Select All'}
-                                    onFunc={this.selectAllItem}/>
-                    </span>
               </div>
               <Input onKeyPress={this.handleKeyPress} onEnterPress={this.handleAddToList}/>
               <div className="input-group-prepend">
                     <span className="addItem">
-                        {/*<button>Add Item</button>*/}
                       <Button onClick={this.handleAddToList}/>
                     </span>
               </div>
@@ -122,7 +111,8 @@ export default class Main extends Component {
                   key={item + index}
                   onRemove={this.removeItem}
                   onDoneItem={this.doneItem}
-                  onDbClickItem={this.dbClickItem}
+                  onKeyPress={this.handleKeyPress}
+                  onEditItem={this.editItem}
                 />
               )
             })}
