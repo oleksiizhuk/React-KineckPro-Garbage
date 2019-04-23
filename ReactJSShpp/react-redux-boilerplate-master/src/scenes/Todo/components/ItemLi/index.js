@@ -28,20 +28,30 @@ export default class ItemLi extends Component {
     this.editItem = this.editItem.bind(this);
     this.isFocused = this.isFocused.bind(this);
     this.enterPress = this.enterPress.bind(this);
+    this.chancheState = this.chancheState.bind(this);
+  }
+
+  chancheState() {
+    this.setState({
+      id: this.props.item.id,
+      flag: this.props.item.flag,
+      value: this.props.item.text,
+    },);
   }
 
   isFocused() {
+    this.chancheState();
     this.setState({isEditInput: !this.state.isEditInput});
   }
 
-  isEditItem() {
+  isEditItem(e) {
     this.isFocused();
-    this.props.onEditItem(this.state.id);
+    this.props.onEditItem(this.props.item.id, e.target.value);
   }
 
   enterPress(e) {
     if (e.key === 'Enter') {
-      this.isEditItem();
+      this.isEditItem(e);
     }
   }
 
@@ -55,11 +65,11 @@ export default class ItemLi extends Component {
   }
 
   doneItem() {
-    this.props.onDoneItem(this.state.id);
+    this.props.onDoneItem(this.props.item.id);
   }
 
   remove() {
-    this.props.onRemove(this.state.id);
+    this.props.onRemove(this.props.item.id);
   }
 
   render() {
@@ -68,7 +78,7 @@ export default class ItemLi extends Component {
           onDoubleClick={this.isFocused}>
         {this.state.isEditInput === true ?
           <span
-            className={this.props.item.flag ? 'completed item-name' : 'unCompleted item-name'}> {this.state.value}
+            className={this.props.item.flag ? 'completed item-name' : 'unCompleted item-name'}> {this.props.item.text}
         </span> :
           <input type="text"
                  value={this.state.value}

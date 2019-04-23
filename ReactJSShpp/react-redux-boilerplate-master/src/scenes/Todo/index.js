@@ -17,52 +17,49 @@ export default class Main extends Component {
     this.sortResolved = this.sortResolved.bind(this);
     this.deleteResolved = this.deleteResolved.bind(this);
     this.editItem = this.editItem.bind(this);
+    this.changeStateList = this.changeStateList.bind(this);
   }
 
   componentWillMount() {
     if (localStorage.getItem('todo') !== null) {
-      this.setState(
-        () => {
-          return {list: JSON.parse(localStorage.getItem('todo'))}
-        }
-      )
+      this.setState({list: JSON.parse(localStorage.getItem('todo'))});
     }
   }
 
   changeStateList(newList) {
-    this.addOrChangeToLocalStorage(newList);
+    localStorage.setItem('todo', JSON.stringify(newList));
     this.setState(() => {
       return {list: newList}
-    }, () => console.log('test'));
-  }
-
-  addOrChangeToLocalStorage(newList) {
-    localStorage.setItem('todo', JSON.stringify(newList));
-  }
-
-  generatorUniqueId() {
-    return "id" + Math.random().toString(16).slice(2);
-  }
-
-  deleteResolved() {
-    const tempList = [...this.state.list];
-    const newItems = tempList.filter(item => item.flag !== true);
-    this.changeStateList(newItems);
+    },);
   }
 
   sortResolved() {
     const newItems = this.deepCopy(this.state.list);
-    newItems.sort(function (a, b) {
-      return a.flag - b.flag;
-    });
-    this.changeStateList(newItems);
+    let newItem = [...newItems.filter(item => item.flag).sort((a, b) => ('' + a.text).localeCompare(b.text)),
+      ...newItems.filter(item => !item.flag).sort((a, b) => ('' + a.text).localeCompare(b.text))];
+    if (JSON.stringify(newItem) === JSON.stringify(this.state.list)) {
+      return;
+    }
+    this.changeStateList(newItem);
   }
 
   sortDone() {
     const newItems = this.deepCopy(this.state.list);
-    newItems.sort(function (a, b) {
-      return b.flag - a.flag;
-    });
+    let newItem = [...newItems.filter(item => !item.flag).sort((a, b) => ('' + a.text).localeCompare(b.text)),
+      ...newItems.filter(item => item.flag).sort((a, b) => ('' + a.text).localeCompare(b.text))];
+    if (JSON.stringify(newItem) === JSON.stringify(this.state.list)) {
+      return;
+    }
+    this.changeStateList(newItem);
+  }
+
+  static generatorUniqueId() {
+    return "id" + Math.random().toString(16).slice(2);
+  }
+
+  deleteResolved() {
+    const tempList = this.deepCopy(this.state.list);
+    const newItems = tempList.filter(item => item.flag !== true);
     this.changeStateList(newItems);
   }
 
@@ -86,11 +83,10 @@ export default class Main extends Component {
     this.changeStateList(newItem);
   }
 
-  editItem(id) {
-    const tmpItems = [...this.state.list];
-    const isEditItem = tmpItems.map((item) => {
+  editItem(id, text) {
+    const isEditItem = this.state.list.map((item) => {
       if (item.id === id) {
-        item.text = this.state.text;
+        item.text = text;
       }
       return item;
     });
@@ -107,23 +103,20 @@ export default class Main extends Component {
     if (this.state.text.trim().length === 0) {
       return;
     }
-    const newList = [...this.state.list];
-    newList.push({text: this.state.text, flag: false, id: this.generatorUniqueId()});
+    const newList = this.deepCopy(this.state.list);
+    newList.push({text: this.state.text, flag: false, id: Main.generatorUniqueId()});
     document.getElementById("input").value = "";
-    this.setState(() => {
-      return {list: newList}
-    }, () => this.addOrChangeToLocalStorage());
+    this.changeStateList(newList);
   }
 
   render() {
-    console.log("render");
     return (
       <MainComponent
         onKeyPress={this.handleKeyPress}
         onAddItem={this.handleAddToList}
         text={this.state.text}
         list={this.state.list}
-        onGeneratorUniqueId={this.generatorUniqueId}
+        onGeneratorUniqueId={Main.generatorUniqueId}
         onRemoveItem={this.removeItem}
         onDoneItem={this.doneItem}
         onSortDone={this.sortDone}
@@ -143,6 +136,7 @@ export default class Main extends Component {
         clonedData = {};
       }
       for (let key in cloneableData) {
+        // noinspection JSUnfilteredForInLoop
         clonedData[key] = this.deepCopy(cloneableData[key]);
       }
     } else {
@@ -150,6 +144,7 @@ export default class Main extends Component {
     }
     return clonedData;
   }
+
 }
 
 

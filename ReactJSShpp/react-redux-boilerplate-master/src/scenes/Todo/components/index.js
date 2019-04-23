@@ -26,7 +26,7 @@ export default class Main extends Component {
     super(props);
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleAddToList = this.handleAddToList.bind(this);
-    this.generatorUniqueId = this.generatorUniqueId.bind(this);
+    Main.generatorUniqueId = this.generatorUniqueId.bind(this);
     this.removeItem = this.removeItem.bind(this);
     this.doneItem = this.doneItem.bind(this);
     this.sortDone = this.sortDone.bind(this);
@@ -35,8 +35,8 @@ export default class Main extends Component {
     this.editItem = this.editItem.bind(this);
   }
 
-  editItem(id) {
-    this.props.onEditItem(id);
+  editItem(id, text = '') {
+    this.props.onEditItem(id, text);
   }
 
   deleteResolved() {
