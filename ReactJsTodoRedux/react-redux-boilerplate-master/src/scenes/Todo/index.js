@@ -1,9 +1,18 @@
 import React, {Component} from 'react';
 import MainComponent from "./components";
 import {connect} from 'react-redux';
-import {addToLocalStorage} from "../../data/Todo/actions";
+import {addToLocalStorage, counter} from "../../data/Todo/actions";
+import PropTypes from "prop-types";
 
 class Main extends Component {
+
+  static propTypes = {
+    list: PropTypes.array,
+    count: PropTypes.any,
+    addToLocalStorage: PropTypes.func,
+    counter: PropTypes.func
+  };
+
   constructor(props) {
     super(props);
 
@@ -20,6 +29,11 @@ class Main extends Component {
     this.deleteResolved = this.deleteResolved.bind(this);
     this.editItem = this.editItem.bind(this);
     this.changeStateList = this.changeStateList.bind(this);
+    this.counter = this.counter.bind(this);
+  }
+
+  counter(number) {
+    this.props.counter(number);
   }
 
   componentWillMount() {
@@ -74,7 +88,6 @@ class Main extends Component {
       return acc;
     }, []);
     this.changeStateList(newItems);
-   /* this.props.addToLocalStorage({name: 'Lesha', id: id});*/
   }
 
   removeItem(id) {
@@ -103,20 +116,17 @@ class Main extends Component {
   }
 
   handleAddToList() {
-    // if (this.state.text.trim().length === 0) {
-    //   return;
-    // }
-    // const newList = this.deepCopy(this.state.list);
-    // newList.push({text: this.state.text, flag: false, id: Main.generatorUniqueId()});
-    // document.getElementById("input").value = "";
-    // this.changeStateList(newList);
     if (this.state.text.trim().length === 0) {
       return;
     }
     const newList = this.deepCopy(this.props.list);
+    let num = this.deepCopy(this.props.count);
+    num++;
     newList.push({text: this.state.text, flag: false, id: Main.generatorUniqueId()});
     document.getElementById("input").value = "";
     this.props.addToLocalStorage(newList);
+
+    this.props.counter(num);
     this.changeStateList(newList);
   }
 
@@ -164,7 +174,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToLocalStorage: (list) => dispatch(addToLocalStorage(list))
+    addToLocalStorage: (list) => dispatch(addToLocalStorage(list)),
+    counter: (count) => dispatch(counter(count))
   };
 };
 
