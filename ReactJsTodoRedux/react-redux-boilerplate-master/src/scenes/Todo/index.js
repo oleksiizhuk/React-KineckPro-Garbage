@@ -62,7 +62,7 @@ class Main extends Component {
       return;
     }
     this.addToLocalStorage(newItems);
-    //this.changeStateList(newItem);
+    this.changeStateList(newItem);
   }
 
   sortDone() {
@@ -73,7 +73,7 @@ class Main extends Component {
       return;
     }
     this.addToLocalStorage(newItems);
-    //this.changeStateList(newItem);
+    this.changeStateList(newItem);
   }
 
   static generatorUniqueId() {
@@ -84,7 +84,7 @@ class Main extends Component {
     const tempList = this.deepCopy(this.state.list);
     const newItems = tempList.filter(item => item.flag !== true);
     this.addToLocalStorage(newItems);
-    //this.changeStateList(newItems);
+    this.changeStateList(newItems);
   }
 
   doneItem(id) {
@@ -96,7 +96,7 @@ class Main extends Component {
       return acc;
     }, []);
     this.addToLocalStorage(newItems);
-   // this.changeStateList(newItems);
+    this.changeStateList(newItems);
   }
 
   removeItem(id) {
@@ -106,7 +106,7 @@ class Main extends Component {
       }
     });
     this.addToLocalStorage(newItem);
-    //this.changeStateList(newItem);
+    this.changeStateList(newItem);
   }
 
   editItem(id, text) {
@@ -117,7 +117,7 @@ class Main extends Component {
       return item;
     });
     this.addToLocalStorage(isEditItem);
-   // this.changeStateList(isEditItem);
+    this.changeStateList(isEditItem);
   }
 
   handleKeyPress(text) {
@@ -134,7 +134,7 @@ class Main extends Component {
     newList.push({text: this.state.text, flag: false, id: Main.generatorUniqueId()});
     document.getElementById("input").value = "";
     this.addToLocalStorage(newList);
-    //this.changeStateList(newList);
+    this.changeStateList(newList);
   }
 
   render() {
