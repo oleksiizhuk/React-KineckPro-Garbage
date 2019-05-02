@@ -1,6 +1,6 @@
 const initialState = {
   list: JSON.parse(localStorage.getItem('todo')) || [],
-  count: 0
+  count: 1
 };
 
 export default function Todo(state = initialState, action) {

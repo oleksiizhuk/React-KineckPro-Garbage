@@ -1,4 +1,4 @@
-export function addToLocalStorage(list) {
+export function onAddToLocalStorage(list) {
   return {
     type: "ADD_TO_STORAGE",
     list: list,

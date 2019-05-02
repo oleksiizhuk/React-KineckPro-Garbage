@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MainComponent from "./components";
 import {connect} from 'react-redux';
-import {addToLocalStorage, counter} from "../../data/Todo/actions";
+import {onAddToLocalStorage, counter} from "../../data/Todo/actions";
 import PropTypes from "prop-types";
 
 class Main extends Component {
@@ -9,7 +9,7 @@ class Main extends Component {
   static propTypes = {
     list: PropTypes.array,
     count: PropTypes.any,
-    addToLocalStorage: PropTypes.func,
+    onAddToLocalStorage: PropTypes.func,
     counter: PropTypes.func
   };
 
@@ -30,10 +30,15 @@ class Main extends Component {
     this.editItem = this.editItem.bind(this);
     this.changeStateList = this.changeStateList.bind(this);
     this.counter = this.counter.bind(this);
+    this.addToLocalStorage = this.addToLocalStorage.bind(this);
   }
 
   counter(number) {
     this.props.counter(number);
+  }
+
+  addToLocalStorage(newList) {
+    this.props.onAddToLocalStorage(newList);
   }
 
   componentWillMount() {
@@ -56,7 +61,8 @@ class Main extends Component {
     if (JSON.stringify(newItem) === JSON.stringify(this.state.list)) {
       return;
     }
-    this.changeStateList(newItem);
+    this.addToLocalStorage(newItems);
+    //this.changeStateList(newItem);
   }
 
   sortDone() {
@@ -66,7 +72,8 @@ class Main extends Component {
     if (JSON.stringify(newItem) === JSON.stringify(this.state.list)) {
       return;
     }
-    this.changeStateList(newItem);
+    this.addToLocalStorage(newItems);
+    //this.changeStateList(newItem);
   }
 
   static generatorUniqueId() {
@@ -76,7 +83,8 @@ class Main extends Component {
   deleteResolved() {
     const tempList = this.deepCopy(this.state.list);
     const newItems = tempList.filter(item => item.flag !== true);
-    this.changeStateList(newItems);
+    this.addToLocalStorage(newItems);
+    //this.changeStateList(newItems);
   }
 
   doneItem(id) {
@@ -87,7 +95,8 @@ class Main extends Component {
       acc.push(item);
       return acc;
     }, []);
-    this.changeStateList(newItems);
+    this.addToLocalStorage(newItems);
+   // this.changeStateList(newItems);
   }
 
   removeItem(id) {
@@ -96,7 +105,8 @@ class Main extends Component {
         return item
       }
     });
-    this.changeStateList(newItem);
+    this.addToLocalStorage(newItem);
+    //this.changeStateList(newItem);
   }
 
   editItem(id, text) {
@@ -106,7 +116,8 @@ class Main extends Component {
       }
       return item;
     });
-    this.changeStateList(isEditItem);
+    this.addToLocalStorage(isEditItem);
+   // this.changeStateList(isEditItem);
   }
 
   handleKeyPress(text) {
@@ -120,14 +131,10 @@ class Main extends Component {
       return;
     }
     const newList = this.deepCopy(this.props.list);
-    let num = this.deepCopy(this.props.count);
-    num++;
     newList.push({text: this.state.text, flag: false, id: Main.generatorUniqueId()});
     document.getElementById("input").value = "";
-    this.props.addToLocalStorage(newList);
-
-    this.props.counter(num);
-    this.changeStateList(newList);
+    this.addToLocalStorage(newList);
+    //this.changeStateList(newList);
   }
 
   render() {
@@ -168,13 +175,14 @@ class Main extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    list: state.Todo.list
+    list: state.Todo.list,
+    count: state.Todo.count
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToLocalStorage: (list) => dispatch(addToLocalStorage(list)),
+    onAddToLocalStorage: (list) => dispatch(onAddToLocalStorage(list)),
     counter: (count) => dispatch(counter(count))
   };
 };
