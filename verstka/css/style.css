@@ -24,7 +24,8 @@
   src: url("./fonts/Circe_Rounded_Extra_Bold/Circe Rounded Extra Bold.ttf");
   src: url("./fonts/Circe_Rounded_Extra_Bold/CirceRounded-ExtraBold.woff"); }
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: red; }
 
 ul {
   padding: 0;
@@ -151,20 +152,29 @@ body {
   font-family: Circe_Rounded_Regular, sans-serif;
   color: #595f6f; }
 
+#drop-down-menu-1 .slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none; }
+
+.header-nav-products-list {
+  display: none; }
+
 .section-div-title {
   margin-top: 135px; }
-  .section-div-title h1 {
+  .section-div-title h3 {
     font-size: 55px;
     font-family: Circe_Rounded_Regular;
     display: inline-block;
     color: #09294f; }
-    .section-div-title h1::before {
+    .section-div-title h3::before {
       content: "";
       border-top: 7px solid #2e86fc;
       position: absolute;
       width: 140px;
-      top: 135px;
-      left: 12px; }
+      top: 85px;
+      left: 20px; }
 
 .section-1 {
   height: 775px; }
@@ -349,14 +359,68 @@ body {
 .box-shadow-header {
   box-shadow: -1px 15px 11px -16px #111; }
 
-#drop-down-menu-1 .slick-initialized .slick-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: none; }
+.section-contact-6 {
+  width: 100%;
+  margin-bottom: 32px; }
 
-.header-nav-products-list {
-  display: none; }
+.section-info {
+  display: flex; }
+  .section-info .requisites-first, .section-info .requisites-second {
+    flex: 0 0 50%; }
+
+.requisites-first .section-6__requisites__p-text {
+  color: #2a2a2a;
+  font-size: 20px;
+  margin-bottom: 60px;
+  font-family: Circe_Rounded_Regular; }
+  .requisites-first .section-6__requisites__p-text .section-6__requisites__span-Title {
+    font-family: Circe_Rounded_Bold;
+    color: #09294f; }
+  .requisites-first .section-6__requisites__p-text .section-6__requisites__mail {
+    color: #2e86fc; }
+
+.requisites-second {
+  position: relative; }
+  .requisites-second:before {
+    content: "";
+    border-top: 4px solid #2e86fc;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px; }
+  .requisites-second .section-6__requisites-second__div {
+    background: #fff;
+    padding: 68px;
+    margin-bottom: 40px; }
+  .requisites-second .section-6__requisites-s__title {
+    font-family: Circe_Rounded_Regular;
+    font-size: 24px;
+    color: #2a2a2a; }
+  .requisites-second .section-6__requisites-s__p-text {
+    font-size: 17px;
+    color: #2a2a2a;
+    font-family: Circe_Rounded_Regular; }
+  .requisites-second .section-6__requisites-s__mail {
+    font-size: 17px;
+    color: #2e86fc;
+    font-family: Circe_Rounded_Regular; }
+  .requisites-second .section-6_requisites-s__download {
+    margin-left: 30%;
+    color: #2e86fc;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Circe_Rounded_Bold; }
+  .requisites-second .location {
+    position: absolute; }
+    .requisites-second .location:before {
+      content: "";
+      border-top: 4px solid #2e86fc;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 0px; }
+    .requisites-second .location img {
+      width: 100%; }
 
 @media only screen and (max-width: 1200px) {
   .header__div-slogan {

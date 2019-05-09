@@ -2,6 +2,7 @@
 
 a
   text-decoration: none
+  color: red
 
 ul
   padding: 0
@@ -56,6 +57,7 @@ body
 
 .header__div-slogan
   padding-top: 10px
+
   img
     max-width: 100%
 
@@ -64,19 +66,24 @@ body
 
   nav
     margin: auto
+
     ul
       li
         display: inline-block
         font-family: Circe_Rounded_Regular
         font-size: 15px
         margin-right: 3%
+
         &:last-child
           margin: 0
+
         a
           color: #595f6f
+
           &:hover
             text-decoration: none
             color: #2e86fc
+
       .icon
         display: none
 
@@ -90,6 +97,7 @@ body
 .nav__active__li
   color: #2e86fc
   position: relative
+
   &:before
     content: ""
     border-top: 3px solid #2e86fc
@@ -123,6 +131,7 @@ body
   font-family: Circe_Rounded_Light
   font-size: 15px
   margin-right: 32px
+
   &:hover
     cursor: pointer
 
@@ -137,20 +146,31 @@ body
   font-family: Circe_Rounded_Regular, sans-serif
   color: #595f6f
 
+#drop-down-menu-1 .slick-initialized .slick-slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  outline: none
+
+.header-nav-products-list
+  display: none
+
 .section-div-title
   margin-top: 135px
-  h1
+
+  h3
     font-size: 55px
     font-family: Circe_Rounded_Regular
     display: inline-block
     color: #09294f
+
     &::before
       content: ""
       border-top: 7px solid #2e86fc
       position: absolute
       width: 140px
-      top: 135px
-      left: 12px
+      top: 85px
+      left: 20px
 
 .section-1
   height: 775px
@@ -158,6 +178,7 @@ body
 .section-1__nav-product__ul
   width: 50%
   margin: 0
+
   &:hover
     cursor: pointer
 
@@ -165,6 +186,7 @@ body
   font-size: 20px
   color: #595f6f
   font-family: Circe_Rounded_Bold
+
   &:hover
     cursor: pointer
 
@@ -181,6 +203,7 @@ body
     left: 50%
     margin-right: -50%
     transform: translate(-95%, 75%)
+
     img
       width: 150%
 
@@ -191,6 +214,7 @@ body
     left: 50%
     margin-right: -50%
     transform: translate(-80%, 65%)
+
     img
       width: 100%
 
@@ -239,10 +263,12 @@ body
   background: #fff
   border-top: 5px solid #2e86fc
   padding: 50px
+
   .section-2__GOST__text-1
     font-size: 22px
     font-family: Circe_Rounded_Regular
     color: #2a2a2a
+
   .section-2__GOST__text-2
     font-size: 28px
     font-family: Circe_Rounded_Bold
@@ -262,9 +288,11 @@ body
   .section-3__img
     height: 100%
     width: 100%
+
   img
     padding: 20px
     width: 100%
+
   .section-3__certificate-div
     text-align: center
 
@@ -295,6 +323,7 @@ body
   font-family: Circe_Rounded_Regular
   color: #2e86fc
   text-decoration: underline
+
   &:hover
     text-decoration: none
     color: red
@@ -321,9 +350,9 @@ body
 
 .section-5__img-block
   padding: 30px
+
   img
     width: 100%
-
 
 
 .visible
@@ -350,12 +379,75 @@ body
 .box-shadow-header
   box-shadow: -1px 15px 11px -16px #111
 
-#drop-down-menu-1 .slick-initialized .slick-slide
-  display: flex
-  flex-direction: column
-  align-items: center
-  outline: none
 
-.header-nav-products-list
-  display: none
+.section-contact-6
+  width: 100%
+  margin-bottom: 32px
+
+.section-info
+  display: flex
+  .requisites-first, .requisites-second
+    flex: 0 0 50%
+
+.requisites-first
+  .section-6__requisites__p-text
+    color: #2a2a2a
+    font-size: 20px
+    margin-bottom: 60px
+    font-family: Circe_Rounded_Regular
+    .section-6__requisites__span-Title
+      font-family: Circe_Rounded_Bold
+      color: #09294f
+    .section-6__requisites__mail
+      color: #2e86fc
+
+.requisites-second
+  position: relative
+  &:before
+    content: ""
+    border-top: 4px solid #2e86fc
+    position: absolute
+    width: 100%
+    left: 0px
+    top: 0px
+  .section-6__requisites-second__div
+    background: #fff
+    padding: 68px
+    margin-bottom: 40px
+
+  .section-6__requisites-s__title
+    font-family: Circe_Rounded_Regular
+    font-size: 24px
+    color: #2a2a2a
+
+
+
+  .section-6__requisites-s__p-text
+    font-size: 17px
+    color: #2a2a2a
+    font-family: Circe_Rounded_Regular
+  .section-6__requisites-s__mail
+    font-size: 17px
+    color: #2e86fc
+    font-family: Circe_Rounded_Regular
+
+  .section-6_requisites-s__download
+    margin-left: 30%
+    color: #2e86fc
+    font-size: 17px
+    font-weight: 700
+    font-family: Circe_Rounded_Bold
+  .location
+    position: absolute
+    &:before
+      content: ""
+      border-top: 4px solid #2e86fc
+      position: absolute
+      width: 100%
+      left: 0px
+      top: 0px
+    img
+      width: 100%
+
+
 @import "media/media.sass"

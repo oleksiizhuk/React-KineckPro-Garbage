@@ -66,4 +66,13 @@ $(function () {
         $(this).addClass("active_Menu_one_arrow");
     });
 
+    /*section news*/
+    const corusel = $(".section-news-7-block__my-carousel");
+
+    corusel.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
 });
