@@ -422,6 +422,11 @@ body {
     .requisites-second .location img {
       width: 100%; }
 
+.section-news-7-block .section-news-7-block__p-text {
+  font-size: 20px;
+  color: #2a2a2a;
+  font-family: Circe_Rounded_Regular; }
+
 @media only screen and (max-width: 1200px) {
   .header__div-slogan {
     display: none; } }
