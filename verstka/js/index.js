@@ -71,7 +71,7 @@ $(function () {
 
     $(".section-news-7-block__my-carousel").slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
     });
 
