@@ -479,6 +479,43 @@ body {
   color: #2a2a2a;
   font-family: Circe_Rounded_Regular; }
 
+.section-8__contact h3 {
+  font-size: 55px;
+  font-family: Circe_Rounded_Regular;
+  display: inline-block;
+  color: #09294f;
+  margin-bottom: 40px; }
+  .section-8__contact h3:before {
+    content: "";
+    border-top: 7px solid #2e86fc;
+    position: absolute;
+    width: 140px;
+    top: -55px;
+    left: 20px; }
+
+.section-8__download-block {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .section-8__download-block .section-8__download-block__item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2e86fc; }
+    .section-8__download-block .section-8__download-block__item .section-8__download-block__item-date {
+      display: block; }
+    .section-8__download-block .section-8__download-block__item .section-8__download-block__item-img {
+      margin-right: 15px; }
+    .section-8__download-block .section-8__download-block__item a, .section-8__download-block .section-8__download-block__item span {
+      color: #ffffff;
+      font-family: Circe_Rounded_Regular; }
+    .section-8__download-block .section-8__download-block__item a {
+      font-size: 12px; }
+    .section-8__download-block .section-8__download-block__item span {
+      font-size: 10px; }
+
 .section-8__main-block {
   display: flex; }
 
@@ -511,18 +548,28 @@ body {
   width: 100%;
   margin: 80px 0; }
 
-.section-8__info-block ul {
-  padding-left: 35px; }
-  .section-8__info-block ul li {
-    padding-left: 35px;
-    list-style-type: disc; }
-.section-8__info-block .section-8__info-block__p {
-  margin-top: 60px; }
+.section-8__info-block {
+  margin-bottom: 80px; }
+  .section-8__info-block ul {
+    padding-left: 35px; }
+    .section-8__info-block ul li {
+      padding-left: 35px;
+      list-style-type: disc; }
+  .section-8__info-block .section-8__info-block__p {
+    margin-top: 60px; }
 
 .section-8__span {
   font-family: Circe_Rounded_Bold;
   font-size: 24px;
   color: #2a2a2a; }
+
+.container-online-order {
+  max-width: 846px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
 
 @media only screen and (max-width: 1200px) {
   .header__div-slogan {
