@@ -619,5 +619,84 @@ body
   padding-right: 15px
   padding-left: 15px
 
+.section-9
+  .modal-dialog
+    max-width: 840px !important
+  .modal-header
+    .modal-title
+      margin: 0 auto
+      font-size: 36px
+      color: #2e86fc
+      font-family: Circe_Rounded_Regular
+  .modal-body
+    label
+      font-size: 26px
+      color: #2a2a2a
+      font-family: Circe_Rounded_Regular
+      padding: 20px 0 10px 3px
+      margin: 0
+      display: block
+
+    .radioInput
+      visibility: hidden
+    .labelRadio
+      display: inline-block
+      cursor: pointer
+      color: #004eff
+      font-size: 22px
+      font-family: Circe_Rounded_Bold
+      &:focus
+        color: #5874b3
+      &:visited
+        color: red
+    .modal-footer
+      justify-content: space-around
+    .section-9__modal-body__input-submit
+      background-color: #2e86fc
+      border-radius: 28px
+      border: 1px solid #2e86fc
+      display: inline-block
+      cursor: pointer
+      color: #ffffff
+      font-family: Circe_Rounded_Bold
+      font-size: 16px
+      padding: 15px 35px
+      text-decoration: none
+      float: right
+      margin-top: 20px
+
+
+    .inputFile
+      overflow: hidden
+      position: absolute
+      z-index: -1
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+    .labelFile
+      display: inline-block
+      cursor: pointer
+      color: #004eff
+      font-size: 22px
+      font-family: Circe_Rounded_Bold
+      &:hover
+        color: #5874b3
+
+  .section-9__download-block__item
+    display: flex
+    align-items: center
+    padding: 15px
+    border-radius: 5px
+    background-color: #2e86fc
+    .section-9__download-block__item-date
+      display: block
+    .section-9__download-block__item-img
+      margin-right: 15px
+    .section-9__download-block__text-div
+      span
+        color: #ffffff
+
+.visibilityHidden
+  visibility: hidden
 
 @import "media/media.sass"

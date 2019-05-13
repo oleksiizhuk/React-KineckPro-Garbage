@@ -15,37 +15,85 @@
 </head>
 <body>
 
+
 <section class="section-9">
-    <div class="container-online-order">
-        <h3>Онлайн заказ</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
 
-        <form action="#">
-            <label for="">Должность</label>
-            <input type="text" id="" placeholder="Ваша должность">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Онлайн заказ</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <label for="position">Должность</label>
+                        <input type="text" id="position" class="form-control" placeholder="Ваша должность">
 
-            <label for="">ФИО</label>
-            <input type="text" placeholder="Фамилия Имя Отчество">
+                        <label for="fullName">ФИО</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Фамилия Имя Отчество">
 
-            <label for="">Телефон</label>
-            <input type="text" placeholder="+7(...) ... .. ..">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" class="form-control" placeholder="+7(...) ... .. ..">
 
-            <label for="">Email</label>
-            <input type="text" placeholder="Ваш email">
+                        <label for="mail">Email</label>
+                        <input type="text" id="mail" placeholder="Ваш email" class="form-control">
 
-            <label for=""> Тип продукции</label>
-            <input type="checkbox" placeholder="Сильфоны">
-            <input type="checkbox" placeholder="Компенсаторы сильфонные">
-            <input type="checkbox" placeholder="Изделия из пластмасс">
+                        <label for="radio1"> Тип продукции</label>
 
-            <label for="">Описание заказа</label>
-            <input type="text" placeholder="Описание, технические особенности или комментарии">
+                        <label for="radio1" class="labelRadio">Сильфоны</label>
+                        <input type="radio" name="radio" placeholder="Сильфоны" id="radio1" class="radioInput">
+                        <label for="radio1" class="labelRadio">Компенсаторы сильфонные</label>
+                        <input type="radio" name="radio" placeholder="Компенсаторы сильфонные" class="radioInput" id="radio2">
+                        <label for="radio1" class="labelRadio">Изделия из пластмасс</label>
+                        <input type="radio" name="radio" placeholder="Изделия из пластмасс" class="radioInput" id="radio3">
 
-        </form>
+                        <label for="description">Описание заказа</label>
+                        <textarea type="text" id="description" class="form-control" rows="3"
+                                  placeholder="Описание, технические особенности или комментарии"></textarea>
+
+                        <div class="modal-footer">
+                            <div class="section-9__download-block__item visibilityHidden">
+                                <div class="section-9__download-block__item-img">
+                                    <img src="icons/writing.png" alt="">
+                                </div>
+                                <div class="section-9__download-block__text-div">
+                                    <span class="section-9__download-block__text-div__download-text"> Документ примечания</span>
+                                    <span class="section-9__download-block__item-date">28.12.19</span>
+                                </div>
+                            </div>
+
+                            <label for="file" class="labelFile"><img src="img/downloadButtonArrow.png" alt="">
+                                Прикрепить файл</label>
+                            <input type="file" id="file" class="inputFile">
+
+                            <input type="submit" class="section-9__modal-body__input-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section>
 
-</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="link/slick-1.8.1/slick/slick.min.js"></script>
+
+<script src="js/index.js"></script>
 </body>
 </html>
