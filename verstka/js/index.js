@@ -76,24 +76,29 @@ $(function () {
     });
 
 
-    /section online order/
-    const inputFile = $('.inputFile');
+    /*section online order*/
+    const inputFile = $('.section-9__inputFile');
 
     inputFile.change("click", function () {
-            let inputFileValue = inputFile.val();
+        let inputFileValue = inputFile.val();
         if (!inputFileValue) {
             return false;
         } else {
-            let spanText = $(".section-9__download-block__text-div__download-text");
-            let spanDate = $(".section-9__download-block__item-date");
+            const spanText = $(".section-9__download-block__text-div__download-text");
+            const spanDate = $(".section-9__download-block__item-date");
             const downloadItem = $(".section-9__download-block__item");
-            downloadItem.removeClass("visibilityHidden");
-            spanText.text(inputFileValue);
             const today = new Date();
-            const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+            downloadItem.removeClass("visibilityHidden");
+            spanText.text(regularFileFunc(inputFileValue));
             spanDate.text(date);
         }
-
     });
+
+    const regularFileFunc = (letter) => {
+        const regular = /[^\/\\]*$/;
+        return letter.match(regular)[0];
+    }
 
 });

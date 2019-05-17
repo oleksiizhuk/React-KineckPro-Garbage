@@ -8,6 +8,7 @@ export default function Todo(state = initialState, action) {
   switch (action.type) {
     case "ADD_TO_STORAGE":
       return {
+        ...state,
         list: action.list
       };
     case "COUNT_PLUS":

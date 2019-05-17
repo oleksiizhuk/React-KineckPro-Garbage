@@ -20,6 +20,7 @@ class Main extends Component {
       text: "",
       list: []
     };
+
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleAddToList = this.handleAddToList.bind(this);
     this.removeItem = this.removeItem.bind(this);
@@ -88,7 +89,7 @@ class Main extends Component {
   }
 
   doneItem(id) {
-    const newItems = this.state.list.reduce((acc, item) => {
+    const newItems = this.deepCopy(this.state.list).reduce((acc, item) => {
       if (item.id === id) {
         item.flag = !item.flag;
       }

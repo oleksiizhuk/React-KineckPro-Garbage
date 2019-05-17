@@ -2,143 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57735f3-d386-43d1-b78e-ae2f7992f8c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/test/lesson 1/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/test/lesson 2/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/test/lesson 3/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/React.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/ReactJSShpp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJSShpp/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/ReactJs.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/Article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/ArticleList/.sass-cache/239156ff1d4ed7222e7c97dd9258938b2d98a2e4/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/ArticleList/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/ArticleList/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/ArticleList/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/components/ArticleList/style.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/fixtures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/src/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJs/app/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/my-todo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.istanbul.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.npmrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/.watchmanconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/docs/FAQ.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/components/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/index.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/store/configureStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/store/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/src/webpack-public-path.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/.yarnclean" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/analyzeBundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/assetsTransformer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/chalkConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/distServer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/enzymeTestAdapterSetup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/fileMock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/nodeVersionCheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/srcServer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/startMessage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/tools/testCi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/webpack.config.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/webpack.config.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactJsTodo/react-redux-boilerplate-master/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/Todo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1 Todo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/Task 2 map filter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2 map filter/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/Task 3 reduce.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 3 reduce/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/Task 4 army function.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 4 army function/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/Tast 5 id generator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 5 id generator/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/Task 7.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 7 iterator/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/Task 8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 8 Create isEqual()/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/Task 6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_6_generator/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/ReduceMapFilter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js own tests/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/Todo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/Todo/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -152,25 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/Name/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/test/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -222,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/Todo/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="109" column="75" selection-start-line="109" selection-start-column="75" selection-end-line="109" selection-end-column="75" />
+            <state relative-caret-position="-646">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -234,11 +83,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459" />
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/data/Todo/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -315,6 +171,12 @@
               <item name="ReactJsTodoRedux" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactJsTodoRedux" type="462c0819:PsiDirectoryNode" />
               <item name="react-redux-boilerplate-master" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactJsTodoRedux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactJsTodoRedux" type="462c0819:PsiDirectoryNode" />
+              <item name="react-redux-boilerplate-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,7 +233,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../life" />
+    <property name="last_opened_file_path" value="Q:/XAMPP/htdocs/site/verstka" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -399,16 +261,17 @@
       <updated>1556261514289</updated>
       <workItem from="1556261517976" duration="11081000" />
       <workItem from="1556277928939" duration="65000" />
+      <workItem from="1557752382204" duration="1226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11146000" />
+    <option name="totallyTimeSpent" value="12372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21338251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21279761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,7 +284,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31310943" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31260228" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -538,11 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -588,7 +448,7 @@
     <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/data/Todo/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -604,12 +464,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/src/scenes/Todo/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="109" column="75" selection-start-line="109" selection-start-column="75" selection-end-line="109" selection-end-column="75" />
+        <state relative-caret-position="-646">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-redux-boilerplate-master/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459" />
       </provider>
     </entry>
   </component>
