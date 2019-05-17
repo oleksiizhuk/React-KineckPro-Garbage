@@ -69,15 +69,18 @@
                 <div class="section-10__form__three-input">
                     <div class="section-10__from__three-input__block">
                         <h5>Условное PN, МПа</h5>
-                        <input type="text" id="pressure-1" class="form-control section-10__form__input" placeholder="Условное PN, МПа">
+                        <input type="text" id="pressure-1" class="form-control section-10__form__input"
+                               placeholder="Условное PN, МПа">
                     </div>
                     <div class="section-10__from__three-input__block">
                         <h5>Условное PN, МПа</h5>
-                        <input type="text" id="pressure-2" class="form-control section-10__form__input" placeholder="Рабочее Pр, МПа">
+                        <input type="text" id="pressure-2" class="form-control section-10__form__input"
+                               placeholder="Рабочее Pр, МПа">
                     </div>
                     <div class="section-10__from__three-input__block">
                         <h5>Пробное Pпр, МПа</h5>
-                        <input type="text" id="pressure-3" class="form-control section-10__form__input" placeholder="Пробное Pпр, МПа">
+                        <input type="text" id="pressure-3" class="form-control section-10__form__input"
+                               placeholder="Пробное Pпр, МПа">
                     </div>
                 </div>
             </div>
@@ -85,13 +88,44 @@
             <div class="section-10__form-class">
                 <h5>Тип сильфона</h5>
                 <div class="section-10__form__two-input-flex-start">
+                    <div class="section-10__form__radio-input">
+                        <label for="singleLayer" class="labelRadio">
+                            <input type="radio" name="radio-1" id="singleLayer"
+                                   class="radioInput">
+                            <span>Однослойные</span></label>
+
+
+                        <label for="multilayer" class="labelRadio">
+                            <input type="radio" name="radio-1"
+                                   class="radioInput"
+                                   id="multilayer">
+                            <span>Многослойные</span></label>
+                    </div>
+                </div>
+
+                <div class="section-10__form__two-input-flex-start">
                     <div class="section-10__from__two-input-flex-start__block">
+                        <h5>Наружный диаметр</h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Однослойный">
                     </div>
                     <div class="section-10__from__two-input-flex-start__block">
+                        <h5>Количество слоев</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
+                    </div>
+                    <div class="section-10__from__two-input-flex-start__block">
+                        <h5>Количество гофров</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
+                    </div>
+                    <div class="section-10__from__two-input-flex-start__block">
+                        <h5>Толщина слоя </h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
                     </div>
                 </div>
+            </div>
+
+            <div class="section-10__form-class">
+
+
             </div>
 
         </form>
