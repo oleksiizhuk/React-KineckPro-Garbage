@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize/normalize.css">
-    <link rel="stylesheet" type="text/css" href="link/slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="link/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <section class="section-10">
     <div class="container-my">
-        <div class="section-10__div-title section-div-title">
-            <h3>Опросный лист для заказа сильфонов</h3>
+        <div class="row">
+            <div class="section-10__div-title section-div-title">
+                <h3>Опросный лист для заказа сильфонов</h3>
+            </div>
         </div>
     </div>
     <div class="container-questionnaire">
         <form action="#" class="section-10__form">
             <div class="section-10__form-class">
-                <h5>Проводимая среда</h5>
+                <h5 class="section-10__form__h5-target">Проводимая среда</h5>
                 <input type="text" class="form-control section-10__form__input" placeholder="Описание среды">
 
                 <div class="section-10__form__radio-input">
@@ -65,7 +65,7 @@
             </div>
 
             <div class="section-10__form-class">
-                <h5>Условный диаметр, DN</h5>
+                <h5 class="section-10__form__h5-target">Давление</h5>
                 <div class="section-10__form__three-input">
                     <div class="section-10__from__three-input__block">
                         <h5>Условное PN, МПа</h5>
@@ -103,20 +103,20 @@
                     </div>
                 </div>
 
-                <div class="section-10__form__two-input-flex-start">
-                    <div class="section-10__from__two-input-flex-start__block">
+                <div class="section-10__form__four-input-flex-start">
+                    <div class="section-10__from__four-input-flex-start__block">
                         <h5>Наружный диаметр</h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Однослойный">
                     </div>
-                    <div class="section-10__from__two-input-flex-start__block">
+                    <div class="section-10__from__four-input-flex-start__block">
                         <h5>Количество слоев</h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
                     </div>
-                    <div class="section-10__from__two-input-flex-start__block">
+                    <div class="section-10__from__four-input-flex-start__block">
                         <h5>Количество гофров</h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
                     </div>
-                    <div class="section-10__from__two-input-flex-start__block">
+                    <div class="section-10__from__four-input-flex-start__block">
                         <h5>Толщина слоя </h5>
                         <input type="text" class="form-control section-10__form__input" placeholder="Многослойный">
                     </div>
@@ -124,109 +124,159 @@
             </div>
 
             <div class="section-10__form-class">
-
-
+                <h5 class="section-10__form__h5-target">Рабочий ход</h5>
+                <div class="section-10__form__1-image-two-input">
+                    <div class="section-10__form__1-image-two-input-block">
+                        <img src="img/drawing-bellows.png" alt="">
+                    </div>
+                    <div class="section-10__form__1-image-two-input-block">
+                        <h5>Растяжение, мм </h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Растяжение, мм">
+                    </div>
+                    <div class="section-10__form__1-image-two-input-block">
+                        <h5>Сжатие, мм</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Сжатие, мм">
+                    </div>
+                </div>
             </div>
 
+            <div class="section-10__form-class">
+                <div class="section-10__form__two-input">
+                    <div class="section-10__form__two-input-block">
+                        <h5>Количество циклов, N </h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="Количество циклов, N">
+                    </div>
+                    <div class="section-10__form__two-input-block">
+                        <h5>За срок службы, лет </h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="За срок службы, лет">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-10__form-class">
+                <h5 class="section-10__form__h5-target">Внешняя приемка</h5>
+                <div class="section-10__form__three-radio-button">
+                    <div class="section-10__form__radio-input">
+                        <label for="otk" class="labelRadio">
+                            <input type="radio" name="radio-2" id="otk"
+                                   class="radioInput">
+                            <span>отк</span></label>
+
+
+                        <label for="vpmo" class="labelRadio">
+                            <input type="radio" name="radio-2"
+                                   class="radioInput"
+                                   id="vpmo">
+                            <span>вп мо</span></label>
+
+                        <label for="gan" class="labelRadio">
+                            <input type="radio" name="radio-2"
+                                   class="radioInput"
+                                   id="gan">
+                            <span>ган</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-10__form-class">
+                <h5 class="section-10__form__h5-target">Дополнительные требования</h5>
+                <input type="text" class="form-control section-10__form__input" placeholder="Дополнительные требования">
+            </div>
+
+            <div class="section-10__form-class">
+                <div class="section-10__form__two-input">
+                    <div class="section-10__form__two-input-block">
+                        <h5>Общая потребность, шт </h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="Общая потребность, шт">
+                    </div>
+                    <div class="section-10__form__two-input-block">
+                        <h5>Срок поставки</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Срок поставки">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-10__form-class">
+                <h5 class="section-10__form__h5-target">Заказчик</h5>
+                <input type="text" class="form-control section-10__form__input" placeholder="Название организации">
+            </div>
+
+            <div class="section-10__form-class">
+                <h5>Адрес</h5>
+                <input type="text" class="form-control section-10__form__input" placeholder="Адрес">
+            </div>
+
+            <div class="section-10__form-class">
+                <div class="section-10__form__three-input">
+                    <div class="section-10__from__three-input__block">
+                        <h5>Телефон</h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="Телефон">
+                    </div>
+                    <div class="section-10__from__three-input__block">
+                        <h5>Факс</h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="Факс">
+                    </div>
+                    <div class="section-10__from__three-input__block">
+                        <h5>Email</h5>
+                        <input type="text" class="form-control section-10__form__input"
+                               placeholder="E-mail">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-10__form-class">
+                <h5 class="section-10__form__h5-target">Контактное лицо</h5>
+                <div class="section-10__form__two-input">
+                    <div class="section-10__form__two-input-block">
+                        <h5>Должность</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="Должность">
+                    </div>
+                    <div class="section-10__form__two-input-block">
+                        <h5>ФИО</h5>
+                        <input type="text" class="form-control section-10__form__input" placeholder="ФИО">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-10__form-class">
+                <div class="section-10__form__last-block">
+                    <div class="section-10__form__last-block__item">
+                        тут будет - я не робот
+                    </div>
+                    <div class="section-10__form__last-block__item">
+                        <div class="section-10__download-block__item visibilityHidden">
+                            <div class="section-10__download-block__item-img">
+                                <img src="icons/writing.png" alt="">
+                            </div>
+                            <div class="section-10__download-block__text-div">
+                                <span class="section-10__download-block__text-div__download-text"> Документ примечания</span>
+                                <span class="section-10__download-block__item-date">28.12.19</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-10__form__last-block__item">
+                        <label for="section-10__form__inputFile" class="section-10__labelFile"><img
+                                src="img/downloadButtonArrow.png"
+                                alt="">
+                            Прикрепить файл</label>
+                        <input type="file" id="section-10__form__inputFile" class="section-10__inputFile">
+                    </div>
+
+                    <div class="section-10__form__last-block__item">
+                        <input type="submit" class="section-10__modal-body__input-submit">
+                    </div>
+                </div>
+            </div>
         </form>
 
     </div>
 
-
-    <section class="section-9">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Онлайн заказ</h5>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#">
-                            <div class="section-9__form-class">
-                                <h5>Должность</h5>
-                                <input type="text" id="position" class="form-control" placeholder="Ваша должность">
-                            </div>
-
-                            <div class="section-9__form-class">
-                                <h5>ФИО</h5>
-                                <input type="text" id="fullName" class="form-control"
-                                       placeholder="Фамилия Имя Отчество">
-                            </div>
-
-                            <div class="section-9__form-class">
-                                <h5>Телефон</h5>
-                                <input type="text" id="phone" class="form-control" placeholder="+7(...) ... .. ..">
-                            </div>
-
-                            <div class="section-9__form-class">
-                                <h5>Email</h5>
-                                <input type="text" id="mail" placeholder="Ваш email" class="form-control">
-                            </div>
-
-                            <div class="section-9__form-class">
-                                <h5> Тип продукции</h5>
-                                <div class="section-9__radio-div">
-
-                                    <label for="radio" class="labelRadio" id="label">
-                                        <input type="radio" name="radio" placeholder="Сильфоны" id="radio"
-                                               class="radioInput">
-                                        <span>Сильфоны</span></label>
-
-
-                                    <label for="radio1" class="labelRadio" id="label1">
-                                        <input type="radio" name="radio" placeholder="Компенсаторы сильфонные"
-                                               class="radioInput"
-                                               id="radio1">
-                                        <span>Компенсаторы сильфонные</span></label>
-
-
-                                    <label for="radio2" class="labelRadio" id="label2">
-                                        <input type="radio" name="radio"
-                                               placeholder="Изделия из пластмасс"
-                                               class="radioInput"
-                                               id="radio2">
-                                        <span>Изделия из пластмасс</span></label>
-
-                                </div>
-                            </div>
-
-                            <div class="section-9__form-class">
-                                <h5>Описание заказа</h5>
-                                <textarea type="text" id="description" class="form-control" rows="3"
-                                          placeholder="Описание, технические особенности или комментарии"></textarea>
-                            </div>
-
-                            <div class="modal-footer">
-                                <div class="section-9__download-block__item visibilityHidden">
-                                    <div class="section-9__download-block__item-img">
-                                        <img src="icons/writing.png" alt="">
-                                    </div>
-                                    <div class="section-9__download-block__text-div">
-                                        <span class="section-9__download-block__text-div__download-text"> Документ примечания</span>
-                                        <span class="section-9__download-block__item-date">28.12.19</span>
-                                    </div>
-                                </div>
-
-                                <label for="file" class="section-9__labelFile"><img src="img/downloadButtonArrow.png"
-                                                                                    alt="">
-                                    Прикрепить файл</label>
-                                <input type="file" id="file" class="section-9__inputFile">
-
-                                <input type="submit" class="section-9__modal-body__input-submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 </section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -239,6 +289,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
 
 </body>
 </html>
