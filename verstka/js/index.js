@@ -1,6 +1,6 @@
 const Markers = {
     fn: {
-        addMarkers: function() {
+        addMarkers: function () {
             const target = $('#image-wrapper');
             const data = target.attr('data-captions');
             const captions = $.parseJSON(data);
@@ -10,30 +10,37 @@ const Markers = {
                 const obj = coords[i];
                 const top = obj.top;
                 const left = obj.left;
-                const text = obj.text;
-                $('<span class="marker"/>').css({
-                    top: top,
-                    left: left
-                }).html('<span class="caption">' + text + '</span>').
-                appendTo(target);
+                const id = obj.id;
+                $('<span class="marker" />')
+                    .css({
+                        top: top,
+                        left: left
+                    })
+                    .html(`<span class="caption" id="${id}">${id}</span>`)
+                    .appendTo(target);
             }
-        },
-        showCaptions: function() {
-            $('span.marker').on('click', function() {
-                const $marker = $(this),
-                    $caption = $('span.caption', $marker);
-                if ($caption.is(':hidden')) {
-                    $caption.slideDown(300);
-                } else {
-                    $caption.slideUp(300);
-                }
-            });
         }
     },
 
-    init: function() {
+    init: function () {
         this.fn.addMarkers();
-        this.fn.showCaptions();
+    },
+
+    showsCaptions: function (id, text) {
+        let elemId = id % 6 === 0 ? (id % 6) + 1 : id % 6;
+        elemId = id > 6 ? elemId + 1 : elemId;
+        const marker = $(`#plus_${elemId}`);
+        const markers = $(".caption");
+        markers.each((item) => {
+            if (item !== elemId) {
+                $(`#plus_${item}`).slideUp(300);
+                if (elemId !== 5) {
+                    $(`#plus_5`).slideUp(300)
+                }
+            }
+        });
+        marker.text(text);
+        marker.slideDown(300);
     }
 };
 
@@ -41,7 +48,6 @@ $(function () {
     Markers.init();
 
     const navLink = $(".nav__li");
-    const sectionMenu = $(".section-1__Menu");
     const sectionMenuItem = $(".section-1__nav-product__ul__li");
     const productLi = $("#li__product");
     const itemLi = $(".drop-down-menu-1__li");
@@ -52,7 +58,7 @@ $(function () {
 
     //test
     $("#menu ul").hide();
-    $("#menu li span").click(function() {
+    $("#menu li span").click(function () {
         $("#menu ul:visible").slideUp("normal");
         if (($(this).next().is("ul")) && (!$(this).next().is(":visible"))) {
             $(this).next().slideDown("normal");
@@ -63,15 +69,13 @@ $(function () {
         const text = $("#section-1__product-info");
         const itemText = $(this).find('div').text();
         const itemId = $(this).find('div').attr('id');
-        console.log(itemText);
-        console.log(itemId);
+        Markers.showsCaptions(itemId, itemText);
         if (text.attr('class') === "invisible") {
             text.removeClass("invisible");
         }
         sectionMenuItem.removeClass("active_Menu_one_arrow");
         $(this).addClass("active_Menu_one_arrow");
     });
-
     //test
 
     productLi.on('click', () => {
@@ -128,25 +132,6 @@ $(function () {
         navLink.removeClass("nav__active__li");
         $(this).addClass("nav__active__li");
     });
-
-
-    /*sectionMenu.on('click', () => {
-        const menu = $(".section-1__nav-product__ul");
-        let res = menu.attr('class').match(/invisible/gi);
-        if (res !== null) {
-            menu.removeClass("invisible");
-            sectionMenu.addClass("active_Menu");
-            sectionMenu.text(">>> Сильфонны");
-        } else {
-            menu.addClass("invisible");
-            sectionMenu.removeClass("active_Menu");
-            $("#section-1__product-info").addClass("invisible");
-            sectionMenu.text("Сильфонны");
-            sectionMenuItem.removeClass("active_Menu_one_arrow");
-        }
-    });*/
-
-
 
 
     /*section online order*/
