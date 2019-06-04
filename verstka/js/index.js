@@ -1,7 +1,53 @@
+const Markers = {
+    fn: {
+        addMarkers: function () {
+            const target = $('#image-wrapper');
+            const data = target.attr('data-captions');
+            const captions = $.parseJSON(data);
+            const coords = captions.coords;
+
+            for (let i = 0; i < coords.length; i++) {
+                const obj = coords[i];
+                const top = obj.top;
+                const left = obj.left;
+                const id = obj.id;
+                $('<span class="marker" />')
+                    .css({
+                        top: top,
+                        left: left
+                    })
+                    .html(`<span class="caption" id="${id}">${id}</span>`)
+                    .appendTo(target);
+            }
+        }
+    },
+
+    init: function () {
+        this.fn.addMarkers();
+    },
+
+    showsCaptions: function (id, text) {
+        let elemId = id % 6 === 0 ? (id % 6) + 1 : id % 6;
+        elemId = id > 6 ? elemId + 1 : elemId;
+        const marker = $(`#plus_${elemId}`);
+        const markers = $(".caption");
+        markers.each((item) => {
+            if (item !== elemId) {
+                $(`#plus_${item}`).slideUp(300);
+                if (elemId !== 5) {
+                    $(`#plus_5`).slideUp(300)
+                }
+            }
+        });
+        marker.text(text);
+        marker.slideDown(300);
+    }
+};
+
 $(function () {
+    Markers.init();
 
     const navLink = $(".nav__li");
-    const sectionMenu = $(".section-1__Menu");
     const sectionMenuItem = $(".section-1__nav-product__ul__li");
     const productLi = $("#li__product");
     const itemLi = $(".drop-down-menu-1__li");
@@ -9,6 +55,28 @@ $(function () {
     const DDMSecond = $("#drop-down-carousel-1");
     const header = $("#header");
 
+
+    //test
+    $("#menu ul").hide();
+    $("#menu li span").click(function () {
+        $("#menu ul:visible").slideUp("normal");
+        if (($(this).next().is("ul")) && (!$(this).next().is(":visible"))) {
+            $(this).next().slideDown("normal");
+        }
+    });
+
+    sectionMenuItem.on('click', function () {
+        const text = $("#section-1__product-info");
+        const itemText = $(this).find('div').text();
+        const itemId = $(this).find('div').attr('id');
+        Markers.showsCaptions(itemId, itemText);
+        if (text.attr('class') === "invisible") {
+            text.removeClass("invisible");
+        }
+        sectionMenuItem.removeClass("active_Menu_one_arrow");
+        $(this).addClass("active_Menu_one_arrow");
+    });
+    //test
 
     productLi.on('click', () => {
         let classNameFirstDDM = DDMFirst.attr('class');
@@ -53,7 +121,8 @@ $(function () {
         }
 
     });
-    function refreshCarousel(){
+
+    function refreshCarousel() {
         $('.section-1-index__your-class-1-js')[0].slick.refresh();
         $('.section-1-index__your-class-2-js')[0].slick.refresh();
         $('.section-1-index__your-class-3-js')[0].slick.refresh();
@@ -62,32 +131,6 @@ $(function () {
     navLink.on('click', function () {
         navLink.removeClass("nav__active__li");
         $(this).addClass("nav__active__li");
-    });
-
-
-    sectionMenu.on('click', () => {
-        const menu = $(".section-1__nav-product__ul");
-        let res = menu.attr('class').match(/invisible/gi);
-        if (res !== null) {
-            menu.removeClass("invisible");
-            sectionMenu.addClass("active_Menu");
-            sectionMenu.text(">>> Сильфонны");
-        } else {
-            menu.addClass("invisible");
-            sectionMenu.removeClass("active_Menu");
-            $("#section-1__product-info").addClass("invisible");
-            sectionMenu.text("Сильфонны");
-            sectionMenuItem.removeClass("active_Menu_one_arrow");
-        }
-    });
-
-    sectionMenuItem.on('click', function () {
-        const text = $("#section-1__product-info");
-        if (text.attr('class') === "invisible") {
-            text.removeClass("invisible");
-        }
-        sectionMenuItem.removeClass("active_Menu_one_arrow");
-        $(this).addClass("active_Menu_one_arrow");
     });
 
 
@@ -131,10 +174,9 @@ $(function () {
         return letter.match(regular)[0];
     };
 
-    //section-11
     const bellowsBlock = $(".section-11__bellows__block-img-text");
-    bellowsBlock.on('click', function () {
-        $('.section-11__bellows__block-img-text').removeClass("section-11__active-block-js");
+    bellowsBlock.on('mouseover', function () {
+        bellowsBlock.removeClass("section-11__active-block-js");
         $(this).addClass("section-11__active-block-js");
         const value = $(this).attr('id');
 
@@ -152,7 +194,7 @@ $(function () {
                 carousel3.addClass('invisible');
                 imgClass.addClass('invisible');
                 img1.removeClass('invisible');
-                refreshCarouselInProduct(carousel1,carousel2,carousel3);
+                refreshCarouselInProduct(carousel1, carousel2, carousel3);
                 break;
             case "section-11-DDM-2":
                 carousel1.addClass('invisible');
@@ -160,7 +202,7 @@ $(function () {
                 carousel3.addClass('invisible');
                 imgClass.addClass('invisible');
                 img2.removeClass('invisible');
-                refreshCarouselInProduct(carousel1,carousel2,carousel3);
+                refreshCarouselInProduct(carousel1, carousel2, carousel3);
                 break;
             case "section-11-DDM-3":
                 carousel1.addClass('invisible');
@@ -168,17 +210,36 @@ $(function () {
                 carousel3.removeClass('invisible');
                 imgClass.addClass('invisible');
                 img3.removeClass('invisible');
-                refreshCarouselInProduct(carousel1,carousel2,carousel3);
+                refreshCarouselInProduct(carousel1, carousel2, carousel3);
                 break;
             default:
-                alert( 'Я таких значений не знаю' );
+                alert('Я таких значений не знаю');
         }
     });
-    function refreshCarouselInProduct(c1, c2, c3){
+
+
+    function refreshCarouselInProduct(c1, c2, c3) {
         c1[0].slick.refresh();
         c2[0].slick.refresh();
         c3[0].slick.refresh();
     }
+
+    const more = $(".more");
+    more.on('click', function () {
+        const textMore = $(".section-12__blueprints__body__table-block__button__text");
+        const arrow = $(".section-12__blueprints__body__table-block__button__arrow");
+        const thisTable = $(this).parent().children(".section-12__blueprints__body__table-block");
+        const thisTableOpen = $(this).parent().children(".section-12__blueprints__body__table-block__open");
+        if (thisTable.hasClass("section-12__blueprints__body__table-block")) {
+            thisTable.removeClass("section-12__blueprints__body__table-block");
+            thisTable.addClass("section-12__blueprints__body__table-block__open");
+            textMore.text("Спрятать таблицу");
+            return;
+        }
+        thisTableOpen.removeClass("section-12__blueprints__body__table-block__open");
+        thisTableOpen.addClass("section-12__blueprints__body__table-block");
+        textMore.text("Показать полную таблицу");
+    });
 
     const initializationCarouselInProductFile = () => {
         const corusel1 = $(".section-11-product__your-class-1-js");

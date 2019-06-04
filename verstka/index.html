@@ -153,16 +153,49 @@
                         сильфонновой продукции</h3>
                 </div>
                 <div class="section-1__nav-product">
-                    <span class="section-1__Menu">Сильфонны</span>
-                    <ul class="section-1__nav-product__ul invisible">
-                        <li class="section-1__nav-product__ul__li">Однослойные</li>
-                        <li class="section-1__nav-product__ul__li">Многослойные</li>
-                        <li class="section-1__nav-product__ul__li">По ТЗ заказчика</li>
+                    <ul id="menu">
+                        <li>
+                            <span class="section-1__Menu">Сильфонны</span>
+                            <ul class="section-1__nav-product__ul">
+                                <li class="section-1__nav-product__ul__li">Однослойные
+                                <div class="section-1__nav-product__ul__li__text" id="1">text 1</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">Многослойные
+                                    <div class="section-1__nav-product__ul__li__text" id="2">text 2</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">По ТЗ заказчика
+                                    <div class="section-1__nav-product__ul__li__text" id="3">text 3</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="section-1__Menu">Компенсаторы сильфонные</span>
+                            <ul class="section-1__nav-product__ul">
+                                <li class="section-1__nav-product__ul__li">Однослойные
+                                    <div class="section-1__nav-product__ul__li__text" id="4">text 4</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">Многослойные
+                                    <div class="section-1__nav-product__ul__li__text" id="5">text 5</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">По ТЗ заказчика
+                                    <div class="section-1__nav-product__ul__li__text" id="6">text 6</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="section-1__Menu">Изделия из пластмасс</span>
+                            <ul class="section-1__nav-product__ul">
+                                <li class="section-1__nav-product__ul__li">Однослойные
+                                    <div class="section-1__nav-product__ul__li__text" id="7">text 7</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">Многослойные
+                                    <div class="section-1__nav-product__ul__li__text" id="8">text 8</div>
+                                </li>
+                                <li class="section-1__nav-product__ul__li">По ТЗ заказчика
+                                    <div class="section-1__nav-product__ul__li__text" id="9">text 9</div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
-                <div class="invisible" id="section-1__product-info">
-                    <p>Компенсаторы сильфонные
-                        Изделия из пластмасс</p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -170,7 +203,16 @@
                     <div class="section-1__product-image-first-image">
                         <img src="img/map.png" alt="">
                     </div>
-                    <div class="section-1__product-image-second-image">
+                    <div class="section-1__product-image-second-image"
+                         id="image-wrapper"
+                         data-captions='{
+                         "coords":
+                         [{"top":115,"left":200,"id":"plus_1"},
+                         {"top":35,"left":400,"id":"plus_2"},
+                         {"top":300,"left":300,"id":"plus_3"},
+                         {"top":200,"left":405,"id":"plus_4"},
+                         {"top":115,"left":525,"id":"plus_5"}
+                         ]}'>
                         <img src="img/bolt.png" alt="">
                     </div>
                 </div>
@@ -399,9 +441,16 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
